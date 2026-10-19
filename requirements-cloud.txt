@@ -1,0 +1,8 @@
+# What the daily cloud run needs (steps 1, 2 and 5). The backtest tools aren't included.
+tradingagents @ git+https://github.com/TauricResearch/TradingAgents@e8f5503e9b86d5c2710b0c76b1f686703968c9df
+openbb-core==2.0.1
+openbb-equity==2.0.0
+openbb-crypto==2.0.0
+openbb-yfinance==2.0.0
+alpaca-py==0.44.0
+python-dotenv

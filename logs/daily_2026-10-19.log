@@ -1,0 +1,24 @@
+
+##### Daily run 2026-10-19 19:14 (dry run) #####
+
+=== 19:14:38  step1_get_data.py ===
+Loading OpenBB (the first run takes a minute while it sets itself up)...
+AAPL: 200 days, 2026-01-02 to 2026-10-19
+NVDA: 200 days, 2026-01-02 to 2026-10-19
+BTC-USD: 292 days, 2026-01-01 to 2026-10-19
+ETH-USD: 292 days, 2026-01-01 to 2026-10-19
+
+=== 19:14:44  step2_ai_signals.py --today --symbols AAPL NVDA BTC-USD ETH-USD --dry-run ===
+4 analyses to run (1 already done). Models: deep=claude-opus-5-5, quick=claude-haiku-5-5
+  2026-10-19  AAPL
+  2026-10-19  NVDA
+  2026-10-19  BTC-USD
+  2026-10-19  ETH-USD
+
+=== 19:14:45  step5_paper_trade.py ===
+Alpaca PAPER account: equity $1,000.00, cash $1,000.00
+AAPL     Overweight  from 2026-07-01: skipped, signal is 110 days old
+
+No orders needed.
+
+Daily run finished at 19:14:47.

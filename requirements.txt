@@ -1,0 +1,10 @@
+# Python 3.14. Rebuild with: .venv\Scripts\python -m pip install -r requirements.txt
+nautilus_trader==2.0.0rc7
+-e ../TradingAgents
+openbb-core
+openbb-equity
+openbb-crypto
+openbb-yfinance
+vectorbt
+alpaca-py
+python-dotenv

@@ -1,0 +1,773 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trading Pipeline</title>
+<style>
+  :root {
+    color-scheme: light;
+    --page: #f9f9f7;
+    --surface: #fcfcfb;
+    --ink: #0b0b0b;
+    --ink-2: #52514e;
+    --muted: #898781;
+    --grid: #e1e0d9;
+    --axis: #c3c2b7;
+    --border: rgba(11, 11, 11, 0.10);
+    --wash: rgba(11, 11, 11, 0.04);
+    --accent: #2a78d6;
+    --accent-track: #cde2fb;
+    --buy: #2a78d6;
+    --sell: #e34948;
+    --hold: #898781;
+    --band: rgba(42, 120, 214, 0.10);
+    --line: #52514e;
+    --good: #0ca30c;
+    --good-text: #006300;
+    --critical: #d03b3b;
+    --warning: #fab219;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --page: #0d0d0d;
+      --surface: #1a1a19;
+      --ink: #f0efec;
+      --ink-2: #c3c2b7;
+      --muted: #898781;
+      --grid: #2c2c2a;
+      --axis: #383835;
+      --border: rgba(255, 255, 255, 0.10);
+      --wash: rgba(255, 255, 255, 0.05);
+      --accent: #3987e5;
+      --accent-track: #0d366b;
+      --buy: #3987e5;
+      --sell: #e66767;
+      --band: rgba(57, 135, 229, 0.14);
+      --line: #c3c2b7;
+      --good-text: #0ca30c;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --page: #0d0d0d;
+    --surface: #1a1a19;
+    --ink: #f0efec;
+    --ink-2: #c3c2b7;
+    --muted: #898781;
+    --grid: #2c2c2a;
+    --axis: #383835;
+    --border: rgba(255, 255, 255, 0.10);
+    --wash: rgba(255, 255, 255, 0.05);
+    --accent: #3987e5;
+    --accent-track: #0d366b;
+    --buy: #3987e5;
+    --sell: #e66767;
+    --band: rgba(57, 135, 229, 0.14);
+    --line: #c3c2b7;
+    --good-text: #0ca30c;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--page);
+    color: var(--ink);
+    font: 14px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  h1 { font-size: 20px; margin: 0; font-weight: 600; }
+  h2 { font-size: 15px; margin: 0 0 10px; font-weight: 600; }
+  h3 { font-size: 13px; margin: 0 0 8px; font-weight: 600; color: var(--ink-2); }
+  .muted { color: var(--muted); }
+  .sub { margin: 2px 0 0; color: var(--ink-2); }
+
+  .top {
+    display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap;
+    padding: 16px 24px; border-bottom: 1px solid var(--border); background: var(--surface);
+    position: sticky; top: 0; z-index: 5;
+  }
+  .top-right { display: flex; align-items: center; gap: 12px; }
+  .live { display: inline-flex; align-items: center; gap: 6px; color: var(--ink-2); font-size: 13px; }
+  .live .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--muted); }
+  .live.on .dot { background: var(--good); animation: pulse 2s ease-in-out infinite; }
+  button {
+    font: inherit; color: var(--ink); background: var(--surface); border: 1px solid var(--border);
+    border-radius: 8px; padding: 5px 10px; cursor: pointer;
+  }
+  button:hover { background: var(--wash); }
+  button:focus-visible, .chart:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  main { max-width: 1280px; margin: 0 auto; padding: 20px 24px 48px; display: grid; gap: 28px; }
+  /* Let grid columns shrink below their content so nothing pushes the page wider than the screen. */
+  main > *, .split > *, .steps > *, .charts > *, .tables > *, .results > * { min-width: 0; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 14px 16px; }
+
+  /* Pipeline */
+  .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 190px), 1fr)); gap: 12px; }
+  .step { display: grid; gap: 8px; align-content: start; }
+  .step.running { border-color: var(--accent); }
+  .step-head { display: flex; align-items: baseline; gap: 8px; }
+  .step-num {
+    flex: none; width: 22px; height: 22px; border-radius: 50%; display: inline-grid; place-items: center;
+    font-size: 12px; font-weight: 600; background: var(--wash); color: var(--ink-2);
+  }
+  .step-name { font-weight: 600; }
+  .tool { color: var(--muted); font-size: 12px; margin-top: -6px; padding-left: 30px; }
+  .chip { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 600; }
+  .chip .ico { width: 16px; height: 16px; border-radius: 50%; display: inline-grid; place-items: center; font-size: 10px; color: #fff; }
+  .chip.idle { color: var(--muted); } .chip.idle .ico { background: var(--axis); }
+  .chip.running { color: var(--ink); } .chip.running .ico { background: var(--accent); animation: pulse 1.6s ease-in-out infinite; }
+  .chip.done { color: var(--ink); } .chip.done .ico { background: var(--good); }
+  .chip.failed { color: var(--ink); } .chip.failed .ico { background: var(--critical); }
+  .detail { font-size: 12.5px; color: var(--ink-2); overflow-wrap: anywhere; }
+  .detail.err { color: var(--ink); }
+  .time { font-size: 12px; color: var(--muted); }
+
+  .bar { height: 6px; border-radius: 3px; background: var(--accent-track); overflow: hidden; }
+  .bar > span { display: block; height: 100%; background: var(--accent); border-radius: 3px; transition: width .4s ease; }
+  .bar.done > span { background: var(--good); }
+  .bar.failed > span { background: var(--critical); }
+  .bar.big { height: 10px; border-radius: 5px; }
+
+  /* Right now + activity */
+  .split { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: 16px; align-items: start; }
+  .now { display: grid; gap: 12px; }
+  .now-title { font-size: 16px; font-weight: 600; }
+  .now-row { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; font-size: 13px; color: var(--ink-2); }
+  .agents { display: flex; flex-wrap: wrap; gap: 6px; }
+  .agent {
+    display: inline-flex; align-items: center; gap: 6px; font-size: 12px; padding: 3px 9px; border-radius: 999px;
+    border: 1px solid var(--border); color: var(--ink-2);
+  }
+  .agent.active { border-color: var(--accent); color: var(--ink); background: var(--band); }
+  .agent.active::before {
+    content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); animation: pulse 1.2s ease-in-out infinite;
+  }
+  .agent.past::before { content: "✓"; color: var(--good-text); font-weight: 700; }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 10px; }
+  .stat { display: grid; gap: 2px; }
+  .stat .label { font-size: 12px; color: var(--muted); }
+  .stat .value { font-size: 18px; font-weight: 600; }
+  .note { font-size: 12.5px; color: var(--ink-2); background: var(--wash); border-radius: 8px; padding: 8px 10px; }
+  code { font-family: ui-monospace, "Cascadia Code", Consolas, monospace; font-size: 12.5px; overflow-wrap: anywhere; }
+
+  .events { list-style: none; margin: 0; padding: 4px 0; max-height: 360px; overflow-y: auto; }
+  .events li { display: grid; grid-template-columns: auto auto 1fr; gap: 8px; padding: 6px 16px; font-size: 13px; align-items: baseline; }
+  .events li + li { border-top: 1px solid var(--grid); }
+  .events .t { color: var(--muted); font-variant-numeric: tabular-nums; font-size: 12px; }
+  .events .s { font-size: 11px; font-weight: 600; color: var(--ink-2); background: var(--wash); border-radius: 4px; padding: 1px 6px; white-space: nowrap; }
+  .events .m { overflow-wrap: anywhere; }
+  .events li.error .m::before { content: "✕ "; color: var(--critical); font-weight: 700; }
+  .events .empty { display: block; color: var(--muted); }
+
+  /* Signals and results */
+  .section-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 10px; }
+  .section-head h2 { margin: 0; }
+  .seg { display: inline-flex; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+  .seg button { border: 0; border-radius: 0; }
+  .seg button + button { border-left: 1px solid var(--border); }
+  .seg button[aria-pressed="true"] { background: var(--ink); color: var(--surface); }
+  .seg button:disabled { color: var(--muted); cursor: default; background: var(--surface); }
+  .results { display: grid; gap: 14px; }
+  .latest { display: flex; flex-wrap: wrap; gap: 8px; }
+  .rating { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; padding: 5px 10px; border-radius: 8px; background: var(--surface); border: 1px solid var(--border); }
+  .rating b { font-weight: 600; }
+  .shape { font-size: 11px; line-height: 1; }
+  .shape.buy { color: var(--buy); } .shape.sell { color: var(--sell); } .shape.hold { color: var(--hold); }
+  .legend { display: flex; flex-wrap: wrap; gap: 16px; font-size: 12.5px; color: var(--ink-2); }
+  .legend span { display: inline-flex; align-items: center; gap: 6px; }
+  .swatch-band { width: 14px; height: 10px; background: var(--band); border: 1px solid var(--accent); border-radius: 2px; }
+  .swatch-line { width: 16px; height: 2px; background: var(--line); border-radius: 1px; }
+
+  .charts { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 12px; }
+  .chart-card { display: grid; gap: 6px; }
+  .chart-title { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+  .chart-title b { font-size: 14px; }
+  .chart-host { width: 100%; min-height: 200px; }
+  svg.chart { display: block; overflow: visible; }
+  svg .grid { stroke: var(--grid); stroke-width: 1; }
+  svg .axis { stroke: var(--axis); stroke-width: 1; }
+  svg .tick { fill: var(--muted); font-size: 11px; font-variant-numeric: tabular-nums; }
+  svg .band { fill: var(--band); }
+  svg .price { fill: none; stroke: var(--line); stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+  svg .mk { stroke: var(--surface); stroke-width: 2; paint-order: stroke; }
+  svg .mk.buy { fill: var(--buy); } svg .mk.sell { fill: var(--sell); } svg .mk.hold { fill: var(--hold); }
+  svg .cross { stroke: var(--ink-2); stroke-width: 1; }
+  svg .hover-dot { fill: var(--ink); stroke: var(--surface); stroke-width: 2; }
+
+  .tables { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 12px; }
+  .scroll { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-size: 13px; }
+  th, td { padding: 6px 8px; text-align: left; white-space: nowrap; }
+  th { font-weight: 600; color: var(--ink-2); font-size: 12px; border-bottom: 1px solid var(--axis); }
+  td { border-bottom: 1px solid var(--grid); }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  details summary { cursor: pointer; font-weight: 600; }
+  details[open] summary { margin-bottom: 8px; }
+  .empty-state { color: var(--ink-2); }
+
+  .tip {
+    position: fixed; z-index: 10; pointer-events: none; min-width: 150px; max-width: 260px;
+    background: var(--surface); color: var(--ink); border: 1px solid var(--border); border-radius: 8px;
+    padding: 8px 10px; font-size: 12.5px; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  }
+  .tip .v { font-size: 15px; font-weight: 600; }
+  .tip .d { color: var(--ink-2); }
+  .tip .r { display: flex; align-items: center; gap: 6px; margin-top: 4px; }
+
+  .offline { background: var(--critical); color: #fff; text-align: center; padding: 6px; font-size: 13px; }
+
+  @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .35; } }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+  @media (max-width: 860px) { .split { grid-template-columns: 1fr; } }
+  @media (max-width: 600px) {
+    .top { padding: 12px 16px; }
+    main { padding: 16px 16px 40px; }
+  }
+</style>
+</head>
+<body>
+<div id="offline" class="offline" hidden>Can't reach the dashboard server. Is <code>python dashboard.py</code> still running?</div>
+<header class="top">
+  <div>
+    <h1>Trading pipeline</h1>
+    <p class="sub">Live view of the starter folder. Updates every 2 seconds.</p>
+  </div>
+  <div class="top-right">
+    <span id="live" class="live"><span class="dot"></span><span id="live-text">Connecting…</span></span>
+    <button id="theme" type="button">Theme: auto</button>
+  </div>
+</header>
+
+<main>
+  <section>
+    <h2>Pipeline</h2>
+    <div id="steps" class="steps"></div>
+  </section>
+
+  <div class="split">
+    <section>
+      <h2>Right now</h2>
+      <div id="now" class="card now"></div>
+    </section>
+    <section>
+      <h2>Activity</h2>
+      <ol id="events" class="card events"></ol>
+    </section>
+  </div>
+
+  <section>
+    <div class="section-head">
+      <h2>Signals and results</h2>
+      <div id="source" class="seg" role="group" aria-label="Which signals to show">
+        <button type="button" data-source="ai" aria-pressed="false">AI signals</button>
+        <button type="button" data-source="demo" aria-pressed="false">Demo signals</button>
+      </div>
+    </div>
+    <div id="results" class="results"></div>
+  </section>
+</main>
+<div id="tip" class="tip" hidden></div>
+
+<script>
+"use strict";
+const $ = (id) => document.getElementById(id);
+const SVGNS = "http://www.w3.org/2000/svg";
+const BULL = new Set(["Buy", "Overweight"]);
+const BEAR = new Set(["Sell", "Underweight"]);
+const SHAPE = { buy: "▲", sell: "▼", hold: "●" };
+
+function el(tag, cls, text) {
+  const node = document.createElement(tag);
+  if (cls) node.className = cls;
+  if (text !== undefined && text !== null) node.textContent = text;
+  return node;
+}
+function sv(tag, attrs) {
+  const node = document.createElementNS(SVGNS, tag);
+  for (const [k, v] of Object.entries(attrs || {})) node.setAttribute(k, v);
+  return node;
+}
+const kindOf = (rating) => (BULL.has(rating) ? "buy" : BEAR.has(rating) ? "sell" : "hold");
+
+// ---------- formatting ----------
+function since(iso) {
+  if (!iso) return "";
+  const s = Math.max(0, Math.round((Date.now() - new Date(iso).getTime()) / 1000));
+  if (s < 10) return "just now";
+  if (s < 60) return `${s} s ago`;
+  if (s < 3600) return `${Math.floor(s / 60)} min ago`;
+  if (s < 86400) return `${Math.floor(s / 3600)} h ago`;
+  return `${Math.floor(s / 86400)} days ago`;
+}
+function duration(fromIso, toIso) {
+  const ms = (toIso ? new Date(toIso) : new Date()) - new Date(fromIso);
+  const s = Math.max(0, Math.round(ms / 1000));
+  if (s < 60) return `${s} s`;
+  const m = Math.floor(s / 60);
+  if (m < 60) return `${m} min ${s % 60} s`;
+  return `${Math.floor(m / 60)} h ${m % 60} min`;
+}
+function price(v) {
+  const digits = v >= 1000 ? 0 : v >= 1 ? 2 : 4;
+  return "$" + v.toLocaleString(undefined, { minimumFractionDigits: digits, maximumFractionDigits: digits });
+}
+function compactPrice(v) {
+  if (Math.abs(v) >= 10000) return "$" + (v / 1000).toLocaleString(undefined, { maximumFractionDigits: 1 }) + "K";
+  return "$" + v.toLocaleString(undefined, { maximumFractionDigits: v >= 10 ? 0 : 2 });
+}
+function shortDate(iso) {
+  return new Date(iso + "T12:00:00").toLocaleDateString(undefined, { month: "short", day: "numeric" });
+}
+function longDate(iso) {
+  return new Date(iso + "T12:00:00").toLocaleDateString(undefined, { weekday: "short", month: "short", day: "numeric", year: "numeric" });
+}
+const int = (n) => Number(n || 0).toLocaleString();
+
+// ---------- polling ----------
+let state = null;
+let source = null;
+let chartsKey = "";
+
+async function poll() {
+  try {
+    const res = await fetch("/api/state", { cache: "no-store" });
+    if (res.ok) {
+      state = await res.json();
+      render();
+    }
+    setLive(true);
+  } catch (err) {
+    setLive(false);
+  } finally {
+    setTimeout(poll, 2000);
+  }
+}
+function setLive(ok) {
+  $("live").classList.toggle("on", ok);
+  $("live-text").textContent = ok ? `Live · ${new Date().toLocaleTimeString()}` : "Offline";
+  $("offline").hidden = ok;
+}
+
+function render() {
+  renderSteps();
+  renderNow();
+  renderEvents();
+  renderResults();
+}
+
+// ---------- pipeline ----------
+const STATE_LABEL = { idle: "Not run yet", running: "Running", done: "Done", failed: "Failed" };
+const STATE_ICON = { idle: "–", running: "", done: "✓", failed: "✕" };
+
+function chip(stateName) {
+  const c = el("span", `chip ${stateName}`);
+  c.append(el("span", "ico", STATE_ICON[stateName]), el("span", null, STATE_LABEL[stateName]));
+  return c;
+}
+function bar(st, big) {
+  const b = el("div", `bar ${st.state}${big ? " big" : ""}`);
+  const fill = el("span");
+  const pct = st.total ? Math.min(100, (100 * st.done) / st.total) : st.state === "done" ? 100 : 0;
+  fill.style.width = pct + "%";
+  b.append(fill);
+  b.setAttribute("role", "progressbar");
+  b.setAttribute("aria-valuemin", "0");
+  b.setAttribute("aria-valuemax", String(st.total || 100));
+  b.setAttribute("aria-valuenow", String(st.total ? st.done : pct));
+  return b;
+}
+
+function renderSteps() {
+  const host = $("steps");
+  host.textContent = "";
+  state.steps.forEach((step, i) => {
+    const st = step.status;
+    const stateName = st ? st.state : "idle";
+    const card = el("div", `card step ${stateName}`);
+    const head = el("div", "step-head");
+    head.append(el("span", "step-num", String(i + 1)), el("span", "step-name", step.name));
+    card.append(head, el("div", "tool", step.tool), chip(stateName));
+    if (st) {
+      if (st.total || st.state === "done") card.append(bar(st));
+      let text = st.title || "";
+      if (st.state === "running") text = [st.total ? `${st.done} of ${st.total}` : "", st.current].filter(Boolean).join(" · ");
+      else if (st.state === "failed") text = st.error || "Failed";
+      else if (st.summary) text = st.summary;
+      card.append(el("div", `detail${st.state === "failed" ? " err" : ""}`, text));
+      const when = st.state === "running" ? `started ${since(st.started)}` : `${st.state === "failed" ? "failed" : "finished"} ${since(st.finished)}`;
+      card.append(el("div", "time", `${st.title} · ${when}`));
+    } else {
+      card.append(el("div", "detail", "Waiting for its first run."));
+    }
+    host.append(card);
+  });
+}
+
+// ---------- right now ----------
+function renderNow() {
+  const host = $("now");
+  host.textContent = "";
+  const running = state.steps.filter((s) => s.status && s.status.state === "running");
+  if (!running.length) {
+    const done = state.steps.filter((s) => s.status && s.status.finished)
+      .sort((a, b) => new Date(b.status.finished) - new Date(a.status.finished));
+    host.append(el("div", "now-title", "Nothing is running."));
+    if (done.length) {
+      const last = done[0];
+      host.append(el("div", "detail", `Last: ${last.name}, ${last.status.summary || last.status.error || last.status.state} (${since(last.status.finished)}).`));
+    }
+    const hint = el("div", "note");
+    hint.append("Start a step in another terminal, for example ", el("code", null, ".venv\\Scripts\\python step1_get_data.py"), ". It will show up here.");
+    host.append(hint);
+    return;
+  }
+  for (const step of running) {
+    const st = step.status;
+    host.append(el("div", "now-title", `${step.name}: ${st.current || st.title}`));
+    host.append(bar(st, true));
+    const row = el("div", "now-row");
+    row.append(el("span", null, st.total ? `${st.done} of ${st.total} done` : st.title),
+               el("span", null, `running for ${duration(st.started)}`));
+    host.append(row);
+
+    if (st.agents_seen && st.agents_seen.length) {
+      host.append(el("h3", null, "Agents in this analysis"));
+      const agents = el("div", "agents");
+      for (const name of st.agents_seen) {
+        const active = (st.agents_active || []).includes(name);
+        agents.append(el("span", `agent ${active ? "active" : "past"}`, name));
+      }
+      host.append(agents);
+    }
+    if (st.llm_calls !== undefined) {
+      const stats = el("div", "stats");
+      const cost = `$${Number(st.est_cost || 0).toFixed(2)}${st.est_cost_complete === false ? "+" : ""}`;
+      for (const [label, value] of [
+        ["AI calls", int(st.llm_calls)],
+        ["Tokens in", int(st.tokens_in)],
+        ["Tokens out", int(st.tokens_out)],
+        ["Estimated cost", cost],
+      ]) {
+        const s = el("div", "stat");
+        s.append(el("span", "label", label), el("span", "value", value));
+        stats.append(s);
+      }
+      host.append(stats);
+      host.append(el("div", "time", "Cost is a rough estimate from list prices for this run. Your Anthropic console has the real figure."));
+    }
+    if (st.models) host.append(el("div", "time", `Models: deep ${st.models.deep}, quick ${st.models.quick}`));
+    if (st.last) host.append(el("div", "detail", `Last result: ${st.last}`));
+    const quietMin = (Date.now() - new Date(st.updated)) / 60000;
+    if (quietMin > 10) {
+      host.append(el("div", "note", `No update for ${Math.floor(quietMin)} min. If you closed that terminal, the step stopped; just run it again.`));
+    }
+  }
+}
+
+// ---------- activity ----------
+function renderEvents() {
+  const host = $("events");
+  host.textContent = "";
+  const names = Object.fromEntries(state.steps.map((s, i) => [s.id, `${i + 1} · ${s.name}`]));
+  if (!state.events.length) {
+    host.append(el("li", "empty", "No activity yet."));
+    return;
+  }
+  for (const ev of state.events.slice(0, 80)) {
+    const li = el("li", ev.level === "error" ? "error" : "");
+    li.append(el("span", "t", new Date(ev.time).toLocaleTimeString()), el("span", "s", names[ev.step] || ev.step), el("span", "m", ev.message));
+    host.append(li);
+  }
+}
+
+// ---------- signals and results ----------
+function renderResults() {
+  const views = state.sources;
+  for (const btn of $("source").querySelectorAll("button")) {
+    const view = views[btn.dataset.source];
+    btn.disabled = !view;
+    btn.textContent = `${btn.dataset.source === "ai" ? "AI signals" : "Demo signals"}${view ? ` (${view.signal_count})` : ""}`;
+  }
+  if (!source || !views[source]) source = views.ai ? "ai" : views.demo ? "demo" : null;
+  for (const btn of $("source").querySelectorAll("button")) btn.setAttribute("aria-pressed", String(btn.dataset.source === source));
+
+  const view = source ? views[source] : null;
+  const key = source + JSON.stringify(view);
+  if (key === chartsKey) return;  // nothing changed: keep the charts (and any hover) as they are
+  chartsKey = key;
+
+  const host = $("results");
+  host.textContent = "";
+  if (!view) {
+    const empty = el("div", "card empty-state");
+    empty.append("No signals yet. Run step 2 (or ", el("code", null, "step2_ai_signals.py --demo"), " for free test signals) and charts will appear here.");
+    host.append(empty);
+    return;
+  }
+
+  // latest rating per symbol
+  const latest = el("div", "latest");
+  for (const c of view.charts) {
+    const last = c.signals[c.signals.length - 1];
+    if (!last) continue;
+    const k = kindOf(last.rating);
+    const tag = el("span", "rating");
+    tag.append(el("b", null, c.symbol), el("span", `shape ${k}`, SHAPE[k]), el("span", null, last.rating), el("span", "muted", `· ${shortDate(last.date)}`));
+    latest.append(tag);
+  }
+  host.append(latest);
+
+  const legend = el("div", "legend");
+  const item = (swatch, label) => { const s = el("span"); s.append(swatch, label); return s; };
+  legend.append(
+    item(el("span", "swatch-line"), "Daily close"),
+    item(el("span", "swatch-band"), "Invested (what the signals held)"),
+    item(el("span", "shape buy", SHAPE.buy), "Buy / Overweight"),
+    item(el("span", "shape hold", SHAPE.hold), "Hold"),
+    item(el("span", "shape sell", SHAPE.sell), "Sell / Underweight"),
+  );
+  host.append(legend);
+
+  const charts = el("div", "charts");
+  host.append(charts);
+  for (const c of view.charts) {
+    const card = el("div", "card chart-card");
+    const title = el("div", "chart-title");
+    const lastClose = c.close[c.close.length - 1];
+    title.append(el("b", null, c.symbol), el("span", "muted", lastClose !== undefined ? `${price(lastClose)} · ${shortDate(c.dates[c.dates.length - 1])}` : ""));
+    const chartHost = el("div", "chart-host");
+    card.append(title, chartHost);
+    charts.append(card);
+    chartHost._chart = c;
+  }
+  drawAllCharts();
+
+  const tables = el("div", "tables");
+  tables.append(tableCard("Quick test · vectorbt", view.quick, "Run step 3 to fill this in."),
+                tableCard("Realistic test · NautilusTrader", view.nautilus, "Run step 4 to fill this in."));
+  host.append(tables);
+  host.append(el("div", "time", `Return % is measured on the ${Number(state.position_size).toLocaleString()} USD put into each symbol.`));
+
+  const details = el("details", "card");
+  details.append(el("summary", null, "All signals (table)"));
+  const rows = view.charts.flatMap((c) => c.signals.map((s) => ({ date: s.date, symbol: c.symbol, rating: s.rating })))
+    .sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : a.symbol.localeCompare(b.symbol)));
+  details.append(table(rows));
+  host.append(details);
+}
+
+function tableCard(titleText, rows, emptyText) {
+  const card = el("div", "card");
+  card.append(el("h3", null, titleText));
+  if (!rows || !rows.length) {
+    card.append(el("div", "muted", emptyText));
+    return card;
+  }
+  // Every symbol is tested over the same window, so show it once instead of in two columns.
+  const sameWindow = rows.every((r) => r.from === rows[0].from && r.to === rows[0].to);
+  if (sameWindow && rows[0].from) {
+    card.append(el("div", "time", `${longDate(rows[0].from)} to ${longDate(rows[0].to)}`));
+    rows = rows.map(({ from, to, ...rest }) => rest);
+  }
+  card.append(table(rows));
+  return card;
+}
+// Columns that measure a gain or loss get a sign; shares of time don't.
+const SIGNED = /return|hold|drawdown|profit/;
+function cellText(col, v) {
+  if (v === null || v === undefined) return "";
+  if (typeof v !== "number") return String(v);
+  if (col.includes("%")) {
+    const sign = SIGNED.test(col) ? (v > 0 ? "+" : v < 0 ? "−" : "") : (v < 0 ? "−" : "");
+    return sign + Math.abs(v).toFixed(col.includes("days") ? 1 : 2) + "%";
+  }
+  if (col.includes("$")) return (v < 0 ? "−$" : "$") + Math.abs(v).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  return v.toLocaleString();
+}
+function table(rows) {
+  const wrap = el("div", "scroll");
+  const t = el("table");
+  const cols = Object.keys(rows[0] || {});
+  const numeric = cols.map((c) => rows.every((r) => r[c] === null || typeof r[c] === "number"));
+  const head = el("tr");
+  cols.forEach((c, i) => head.append(el("th", numeric[i] ? "num" : "", c)));
+  const thead = el("thead");
+  thead.append(head);
+  const tbody = el("tbody");
+  for (const r of rows) {
+    const tr = el("tr");
+    cols.forEach((c, i) => tr.append(el("td", numeric[i] ? "num" : "", cellText(c, r[c]))));
+    tbody.append(tr);
+  }
+  t.append(thead, tbody);
+  wrap.append(t);
+  return wrap;
+}
+
+// ---------- charts ----------
+function niceTicks(lo, hi, count) {
+  if (hi === lo) { hi = lo + 1; lo = lo - 1; }
+  const raw = (hi - lo) / count;
+  const mag = Math.pow(10, Math.floor(Math.log10(raw)));
+  const step = [1, 2, 2.5, 5, 10].map((m) => m * mag).find((s) => s >= raw);
+  const ticks = [];
+  for (let v = Math.floor(lo / step) * step; v <= hi + step * 0.001; v += step) ticks.push(+v.toFixed(10));
+  if (ticks[ticks.length - 1] < hi) ticks.push(ticks[ticks.length - 1] + step);
+  return ticks;
+}
+function lastIndexAtOrBefore(dates, day) {
+  let k = -1;
+  for (let i = 0; i < dates.length && dates[i] <= day; i++) k = i;
+  return k;
+}
+function drawAllCharts() {
+  for (const hostNode of document.querySelectorAll(".chart-host")) if (hostNode._chart) drawChart(hostNode, hostNode._chart);
+}
+
+function drawChart(host, c) {
+  host.textContent = "";
+  const n = c.dates.length;
+  if (n < 2) { host.append(el("div", "muted", "Not enough prices yet.")); return; }
+  const W = Math.max(280, host.clientWidth), H = 200;
+  const m = { l: 56, r: 12, t: 10, b: 26 };
+  const iw = W - m.l - m.r, ih = H - m.t - m.b;
+  const X = (i) => m.l + (i * iw) / (n - 1);
+  const ticks = niceTicks(Math.min(...c.close), Math.max(...c.close), 4);
+  const lo = ticks[0], hi = ticks[ticks.length - 1];
+  const Y = (v) => m.t + ih - ((v - lo) / (hi - lo)) * ih;
+
+  const svg = sv("svg", { class: "chart", width: W, height: H, viewBox: `0 0 ${W} ${H}`, role: "img", tabindex: "0",
+    "aria-label": `${c.symbol} daily close with signals. Use the arrow keys to step through days.` });
+
+  // invested bands
+  const half = iw / (n - 1) / 2;
+  for (let i = 0; i < n; ) {
+    if (!c.held[i]) { i++; continue; }
+    let j = i;
+    while (j + 1 < n && c.held[j + 1]) j++;
+    const x0 = Math.max(m.l, X(i) - half), x1 = Math.min(W - m.r, X(j) + half);
+    svg.append(sv("rect", { class: "band", x: x0, y: m.t, width: x1 - x0, height: ih }));
+    i = j + 1;
+  }
+  // grid and y ticks
+  for (const t of ticks) {
+    svg.append(sv("line", { class: "grid", x1: m.l, x2: W - m.r, y1: Y(t), y2: Y(t) }));
+    const label = sv("text", { class: "tick", x: m.l - 8, y: Y(t) + 4, "text-anchor": "end" });
+    label.textContent = compactPrice(t);
+    svg.append(label);
+  }
+  svg.append(sv("line", { class: "axis", x1: m.l, x2: W - m.r, y1: m.t + ih, y2: m.t + ih }));
+  // month labels
+  let lastMonth = "", lastX = -Infinity;
+  c.dates.forEach((d, k) => {
+    const month = d.slice(0, 7);
+    if (month === lastMonth) return;
+    lastMonth = month;
+    if (X(k) - lastX < 40 || X(k) > W - m.r - 16) return;
+    lastX = X(k);
+    const label = sv("text", { class: "tick", x: X(k), y: H - 8, "text-anchor": "middle" });
+    label.textContent = new Date(d + "T12:00:00").toLocaleDateString(undefined, { month: "short" });
+    svg.append(label);
+  });
+  // price line
+  svg.append(sv("path", { class: "price", d: c.close.map((v, k) => `${k ? "L" : "M"}${X(k).toFixed(1)},${Y(v).toFixed(1)}`).join("") }));
+  // signal markers, placed on the last close the AI could see
+  const byIndex = new Map();
+  for (const s of c.signals) {
+    const k = lastIndexAtOrBefore(c.dates, s.date);
+    if (k < 0) continue;
+    if (!byIndex.has(k)) byIndex.set(k, []);
+    byIndex.get(k).push(s);
+    const x = X(k), y = Y(c.close[k]), kind = kindOf(s.rating);
+    if (kind === "hold") svg.append(sv("circle", { class: "mk hold", cx: x, cy: y, r: 4.5 }));
+    else if (kind === "buy") svg.append(sv("path", { class: "mk buy", d: `M${x},${y - 6}L${x + 6},${y + 4.5}L${x - 6},${y + 4.5}Z` }));
+    else svg.append(sv("path", { class: "mk sell", d: `M${x},${y + 6}L${x + 6},${y - 4.5}L${x - 6},${y - 4.5}Z` }));
+  }
+  // hover / keyboard layer
+  const cross = sv("line", { class: "cross", y1: m.t, y2: m.t + ih, visibility: "hidden" });
+  const dot = sv("circle", { class: "hover-dot", r: 4, visibility: "hidden" });
+  const hit = sv("rect", { x: m.l, y: 0, width: iw, height: H, fill: "transparent" });
+  svg.append(cross, dot, hit);
+  let current = null;
+  const show = (k) => {
+    current = Math.max(0, Math.min(n - 1, k));
+    const x = X(current), y = Y(c.close[current]);
+    cross.setAttribute("x1", x); cross.setAttribute("x2", x); cross.setAttribute("visibility", "visible");
+    dot.setAttribute("cx", x); dot.setAttribute("cy", y); dot.setAttribute("visibility", "visible");
+    const tip = $("tip");
+    tip.textContent = "";
+    tip.append(el("div", "v", price(c.close[current])), el("div", "d", `${c.symbol} · ${longDate(c.dates[current])}`),
+               el("div", "d", c.held[current] ? "Invested" : "Not invested"));
+    for (const s of byIndex.get(current) || []) {
+      const row = el("div", "r");
+      const kind = kindOf(s.rating);
+      row.append(el("span", `shape ${kind}`, SHAPE[kind]), el("b", null, s.rating), el("span", "d", `rating for ${shortDate(s.date)}`));
+      tip.append(row);
+    }
+    tip.hidden = false;
+    const box = svg.getBoundingClientRect();
+    const tw = tip.offsetWidth, th = tip.offsetHeight;
+    let left = box.left + x + 14;
+    if (left + tw > window.innerWidth - 8) left = box.left + x - tw - 14;
+    tip.style.left = Math.max(8, left) + "px";
+    tip.style.top = Math.max(8, Math.min(window.innerHeight - th - 8, box.top + y - th / 2)) + "px";
+  };
+  const hide = () => { cross.setAttribute("visibility", "hidden"); dot.setAttribute("visibility", "hidden"); $("tip").hidden = true; current = null; };
+  hit.addEventListener("pointermove", (e) => {
+    const box = svg.getBoundingClientRect();
+    show(Math.round(((e.clientX - box.left - m.l) / iw) * (n - 1)));
+  });
+  hit.addEventListener("pointerleave", hide);
+  svg.addEventListener("focus", () => show(n - 1));
+  svg.addEventListener("blur", hide);
+  svg.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowLeft" || e.key === "ArrowRight") {
+      e.preventDefault();
+      show((current ?? n - 1) + (e.key === "ArrowLeft" ? -1 : 1));
+    }
+  });
+  host.append(svg);
+}
+
+// redraw charts when their width changes
+let resizeTimer = null;
+let lastWidth = window.innerWidth;
+window.addEventListener("resize", () => {
+  if (window.innerWidth === lastWidth) return;
+  lastWidth = window.innerWidth;
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(drawAllCharts, 150);
+});
+window.addEventListener("scroll", () => { $("tip").hidden = true; }, { passive: true });
+
+// ---------- source toggle ----------
+$("source").addEventListener("click", (e) => {
+  const btn = e.target.closest("button");
+  if (!btn || btn.disabled) return;
+  source = btn.dataset.source;
+  if (state) renderResults();
+});
+
+// ---------- theme ----------
+const THEMES = ["auto", "light", "dark"];
+function applyTheme(t) {
+  if (t === "auto") delete document.documentElement.dataset.theme;
+  else document.documentElement.dataset.theme = t;
+  $("theme").textContent = `Theme: ${t}`;
+}
+let theme = "auto";
+try { theme = localStorage.getItem("pipeline-theme") || "auto"; } catch (e) { /* storage blocked */ }
+if (!THEMES.includes(theme)) theme = "auto";
+applyTheme(theme);
+$("theme").addEventListener("click", () => {
+  theme = THEMES[(THEMES.indexOf(theme) + 1) % THEMES.length];
+  applyTheme(theme);
+  try { localStorage.setItem("pipeline-theme", theme); } catch (e) { /* storage blocked */ }
+});
+
+poll();
+</script>
+</body>
+</html>
