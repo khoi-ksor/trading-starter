@@ -71,18 +71,22 @@ Every analysis costs real Claude API money, so start small:
 .venv\Scripts\python step4_nautilus_backtest.py
 ```
 
-## 3. Daily paper trading (automatic)
+## 3. Daily paper trading (automatic, in the cloud)
 
-Windows Task Scheduler runs `run_daily.py` every day at 5:15 PM, as the task **"Trading starter daily run"**:
+GitHub runs `run_daily.py` every day at 21:15 UTC (5:15 PM New York time in summer, 4:15 PM in winter), so your PC can be off. It's the **Daily trading bot** workflow in https://github.com/e9109015-lang/trading-starter:
 
 1. Get fresh prices.
 2. Get today's AI ratings. On weekends only crypto is rated, since stock markets are closed.
 3. Place the matching paper trades.
 
-The computer must be on and you must be signed in. If it was off at 5:15, the run starts as soon as it's back on. Each run is logged in `logs/` and shows on the dashboard.
+Each run saves its signals, the AI's memory and its log back to the repo.
 
+- **See the results on your PC:** run `git pull` in this folder, then open the dashboard.
 - **Self-learning:** daily runs share one memory, `signals/tradingagents/live_memory.md`. TradingAgents scores each call after about 5 trading days and feeds the lessons into later analyses.
-- **Pause or remove it:** open Task Scheduler and disable or delete "Trading starter daily run".
+- **Pause it:** GitHub repo → Actions → Daily trading bot → "Disable workflow".
+- **Test it without spending:** Actions → Daily trading bot → "Run workflow" with "Dry run" ticked.
+- **Keys:** stored as encrypted repo secrets (Settings → Secrets and variables → Actions). If you change a key in `.env`, update it there too.
+- **Windows task:** the old "Trading starter daily run" task is disabled so the bot doesn't trade twice. Re-enable it only if you stop the cloud workflow.
 
 To do the same by hand:
 
