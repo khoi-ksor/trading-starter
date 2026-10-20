@@ -10,3 +10,4 @@ status/
 signals/demo_signals.csv
 signals/tradingagents/logs/
 signals/tradingagents/history_memory/
+*.lock

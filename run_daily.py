@@ -1,6 +1,6 @@
 r"""The bot's daily run: fresh prices -> today's AI ratings -> paper trades.
 
-Windows Task Scheduler runs this every day at 5:15 PM (task "Trading starter daily run").
+GitHub Actions runs this every day at 21:15 UTC (.github/workflows/daily.yml).
 You can also run it by hand:
 
     .venv\Scripts\python run_daily.py             # the real run (paper trades only)
