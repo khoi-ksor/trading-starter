@@ -73,7 +73,7 @@ Every analysis costs real Claude API money, so start small:
 
 ## 3. Daily paper trading (automatic, in the cloud)
 
-GitHub runs `run_daily.py` every day at 21:15 UTC (5:15 PM New York time in summer, 4:15 PM in winter), so your PC can be off. It's the **Daily trading bot** workflow in https://github.com/e9109015-lang/trading-starter:
+GitHub runs `run_daily.py` every day at 21:15 UTC (5:15 PM New York time in summer, 4:15 PM in winter), so your PC can be off. It's the **Daily trading bot** workflow in https://github.com/khoi-ksor/trading-starter:
 
 1. Get fresh prices.
 2. Get today's AI ratings. On weekends only crypto is rated, since stock markets are closed.
