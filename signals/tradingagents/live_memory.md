@@ -101,3 +101,130 @@ Custody: given the phishing and wallet-exploit activity reported in the social f
 
 <!-- ENTRY_END -->
 
+[2026-10-20 | AAPL | Hold | pending]
+
+DECISION:
+**Rating**: Hold
+
+**Executive Summary**: Keep AAPL at about a standard (market-weight) allocation and don't add before fiscal Q4 earnings (reported for around Nov 2; check the date on Apple's IR calendar). If you're underweight, build to about 50% of a standard position now. Exit risk is a daily close below 326.92 (the 50 SMA); on that close, cut to 50–75% of standard. Trim 10–20% if price reaches 346–348 while the MACD histogram is still negative. Move to Overweight (up to 125% of standard) on a clean earnings report, or on a daily close above 343.46 with a positive histogram and RSI above 55–60. The decision window is the next 2–6 weeks, with protection (puts or a collar) on part of the position through the earnings report if your mandate allows.
+
+**Investment Thesis**: I side with the conservative and neutral analysts on how big the position should be and when to add, and with the bull on the business itself. The result is a Hold with clear triggers, not a stance that avoids a call.
+
+**What favors owning AAPL.** All three analysts agree on these points:
+- Diluted EPS rose about 29% from a year earlier ($2.02 vs $1.57).
+- Revenue has grown about 16% a year for three straight quarters.
+- Gross margin rose from 46.5% to 50.1%, and operating margin is about 32.6%.
+- Trailing free cash flow is about $108B.
+- The trend is intact: the 10 EMA (340.25) is above the 50 SMA (326.92), which is above the 200 SMA (292.85), and both longer averages are rising.
+
+These points are why I'm not going Underweight.
+
+**Why the aggressive case for full size now loses:**
+1. **Gap risk.** AAPL fell 7.4% in one session on July 31. A stop at 326.92, about 3.7% below the 339.50 close, can't cap a similar overnight gap on earnings. A stop triggers an exit; it doesn't guarantee the price.
+2. **Worse risk per share on the breakout add.** Buying at about 347 with the same stop risks about 20 points per share, roughly 60% more than buying at 339.50.
+3. **The foldable is the wrong catalyst.** The Oct 23 launch falls outside fiscal Q4, so it only shows up through guidance. The late-January delivery claim comes from a 30-message StockTwits sample, which the sentiment report itself rates as low weight.
+4. **Volatility and band signals don't give direction.** ATR shrinking to 6.48 says a big move is coming, not which way. Hitting the upper Bollinger Band doesn't confirm a breakout either; price was already turned back near 348.15.
+5. **The momentum checks are negative right now.** The MACD crossed below its signal line on Oct 20, and the histogram moved from +0.19 to -0.14. RSI has eased to 55.5.
+
+**Why I'm not going Underweight either.** The neutral analyst correctly pushes back on parts of the conservative case:
+- The 97% chance of no Fed cuts is already priced in.
+- "Lagging the index" rests on a single day's move.
+- The higher 343.46 close on Oct 16 shows a tight, high-level consolidation, not a breakdown.
+
+Valuation is still stretched: 35.5x forward earnings and a PEG of 2.75, against consensus growth of about 9.7%. But nothing in the data shows fundamentals getting worse. The bear's points are about price and timing, not about the business breaking down.
+
+**The deciding point.** The open questions are forward iPhone demand and the gross margin outlook. Only the earnings report about two weeks out can answer them. Paying 35x forward earnings before that answer arrives, at full or extra size, isn't justified. Neither is selling a company that's compounding at this rate. I'm adopting one refinement from the neutral analyst: the upgrade can trigger on a confirmed close above 343.46 rather than 346.31. Price confirmation still matters, but that level is less stretched and carries less risk per share.
+
+**What would change the call:**
+- **Upgrade to Overweight** if Q4 shows operating margin holding or growing and guidance doesn't flag an iPhone slowdown or gross margin pressure, or on the price confirmation above. A pullback that holds 327–337 on closing prices after a clean report is the best place to add.
+- **Downgrade to Underweight (about 50% of standard)** if guidance points to iPhone deceleration or margin compression, if the stock closes below 326.92 after earnings (then expect a test of the 200 SMA at 292.85), or if the CEO transition is confirmed and looks disorderly.
+
+**Unverified items to check before resizing.** None of these can be confirmed from the information here:
+- The earnings date.
+- The CEO-transition reports.
+- The free cash flow mismatch: trailing-twelve-month FCF of $107.7B is lower than the implied nine-month figure of about $110B, so the fundamentals data appears to be missing the FY25 Q4 quarter.
+- The roughly doubled equity figure.
+- Insider titles, against Form 4 filings.
+
+**Price Target**: not provided
+
+**Time Horizon**: 2-6 weeks (through fiscal Q4 earnings), then reassess
+
+<!-- ENTRY_END -->
+
+[2026-10-20 | NVDA | Overweight | pending]
+
+DECISION:
+**Rating**: Overweight
+
+**Executive Summary**: Overweight NVDA, built in stages. Buy a first tranche of about 30–40% of a standard allocation now, spread across $212–217 rather than at one price. Add about 25–30% only on a daily close above the 50 SMA at $222.81 on rising volume. Add the rest, up to full weight, only after the November 18 Q3 print, and only if Data Center revenue is about $100B or more and gross margin is 73% or higher. Use a daily-close stop near $203 (200 SMA). Size the position so that an overnight gap to about $195 is a loss you can absorb. Stay at or below 1.0x standard weight until the SEC data issues are reconciled. Horizon is 3–6 months.
+
+**Investment Thesis**: The fundamental case is still the stronger one. Revenue roughly doubled year over year ($46.7B to $96.2B), gross margin rose from about 60% to 75%, and the current ratio is above 4. Even the bear's stress case, with sequential EPS growth slowing to 10% a quarter, puts NVDA near 17x forward earnings. That is about what an average large cap costs, for a much faster-growing business. Nobody in the debate showed the stock is expensive or that the business is breaking. The conservative and neutral analysts argued mainly about timing and sizing. Those are reasons to size carefully, not to stay out.
+
+The aggressive analyst's call to load up on the first tranche loses on the evidence. His reward-to-risk claim was wrong: a stop at $203 against a target of $239.24 is about 1.7:1, not 2:1. He also said the stop lines up with the $210.96 September low, but $203 is below it. The lower Bollinger Band is a volatility envelope, not support that buyers have defended. Price has tested it intraday without a clean bounce. The chart is weak: lower highs since October 6, price below the 10 EMA and 50 SMA, MACD below zero, and heavier volume on down days. Several officers are selling, not only Stevens. Most important, a close-based stop does not protect against an earnings gap. With a 2.2 beta and expectations already centered near $100B in Data Center revenue and 73–75% gross margin, an in-line print can still send the stock down. So I'm cutting the starter below the trader's 40–50% to the neutral analyst's range of about 30–40%, and sizing for a gap to roughly $195.
+
+The conservative case for a 25% token position or waiting for confirmation goes too far. As the neutral analyst noted, forward EPS is a consensus estimate. The free-cash-flow mismatch doesn't directly invalidate it, though the missing January 2026 quarter does make the trailing EPS base uncertain. Waiting for a close above the 10 EMA means paying for confirmation. The 50 SMA at $222.81 is the better level for adding, because that's where the medium-term trend actually improves.
+
+Several things are open and must be checked before adding the second tranche. Free cash flow ($41.8B) doesn't reconcile with operating cash flow ($74B) less capex ($4.4B). Liabilities jumped 43% in one quarter without explanation. The January 2026 quarter is missing. We have no macro data, since FRED was unavailable, so we can't see yields or CPI. The market is pricing a 97% chance of no Fed cuts in 2026, so a hot inflation or jobs print could hit this high-beta stock before November 18.
+
+What would change the call: a decisive close below $203 on heavy volume that doesn't recover within a few sessions means cut back to about 25% or exit. Q3 Data Center revenue well below $100B or gross margin under 73% means exit the added tranches. Lower capex guidance from Meta, Alphabet, Amazon or Microsoft, open-market selling by the CEO, or officer selling that keeps its pace means stop adding or cut back to the starter. For callers who already hold full weight or more: don't add before the print. Consider trimming back to 1.0x or buying defined-risk puts through November 18.
+
+**Price Target**: 239.0
+
+**Time Horizon**: 3-6 months
+
+<!-- ENTRY_END -->
+
+[2026-10-20 | BTC-USD | Hold | pending]
+
+DECISION:
+**Rating**: Hold
+
+**Executive Summary**: Hold BTC-USD at about 75–100% of your standard allocation. Don't add while price is in the middle of the 81,382–83,679 range, and don't place a buy-stop before the CPI print. Act on the first daily close after CPI. A close above 83,679 with the MACD histogram recovering toward zero means add up to two tranches of about 25% of standard each. A daily close below 81,382 with the histogram below about -500, or two closes below the 50 SMA (about 81,570), means cut to about 50%. Base stops on daily closes, and size positions so an intraday wick to about 81,100 plus slippage stays within the loss you'd accept on one trade.
+
+**Investment Thesis**: After weighing the debate, the case is still balanced. Hold is the call on the evidence, not a compromise between the analysts.
+
+Bullish evidence: price (82,946) is about 14% above a rising 200 SMA (72,650) and above the 50 SMA, which has risen every session. The MACD histogram improved from -585 to -282, and the $820M liquidation cleared out fragile leverage. Bearish evidence: the swings are getting shorter and lower (86,480, then 83,679, then 81,382), MACD is still below its signal line (40.95 vs 323.06), and RSI has fallen from 86 in August to 52.65. Neither side is strong enough to justify Overweight or Underweight.
+
+The Aggressive analyst made a fair point that volatility is compressed (Bollinger width fell from about 13,281 to about 6,376, and ATR is about 2,045). But Conservative and Neutral were right that compression tells you a move is coming, not which way. The 83,679 trigger is also the consolidation high, which the market already rejected on 10/11. A buy-stop there before CPI is a bet that the rejection reverses, not trend-following. Neutral also corrected the upside math: 90K is about 2.75R, not 3.7R, and that target comes from 22 bunched StockTwits posts, not from the chart. The supposed short-squeeze fuel is the same thin sample. On the other side, Neutral showed that Conservative's stop framing was impractical. The 10/20 intraday low of 81,131.63 already went below 81,382 without a close beneath it, so the stop has to be close-based and protected through sizing.
+
+Key data is missing: net spot-ETF flows across all issuers (we only have a headline about IBIT), verified on-chain data (the 88,987 BTC accumulation figure comes from an unverified note), and CPI, rates and VIX readings (FRED is unavailable). Polymarket's 22% odds of $100K by year-end have fallen 5 points in a week, and it puts 8–10% odds on a drop to $50–55K, so the range of outcomes is wide.
+
+Waiting is the better trade-off. If CPI is hot, waiting costs nothing. If CPI is soft, waiting means a somewhat worse entry, and that is a cost you can recover from.
+
+What would change the rating:
+- **Upgrade to Overweight:** a daily close above 83,679, ideally also above the Bollinger middle (about 83,215), with the histogram turning positive. Add the second tranche on a retest of 83,000–83,700 or a close above about 86,400. If an intraday break above 83,679 comes on volume clearly above the consolidation average, a small starter of 10–15% of standard is acceptable (Neutral's suggestion), but the main add still waits for the close.
+- **Downgrade to Underweight:** a close below 81,382 with the histogram below about -500, or two closes below the 50 SMA. Watch 80,026 and the 80K area next. A sustained move toward the 200 SMA would mean the trend has changed, so reduce toward minimal exposure.
+- **Sizing condition:** if ETF flows turn out to be net negative or concentrated in a single fund that is slowing, make any breakout add half size.
+
+Larger books can hedge into CPI with defined-risk instruments. For most holders, the rule to cut to 50% on a failed close is the cheaper protection.
+
+**Price Target**: 86400.0
+
+**Time Horizon**: 2-6 weeks (re-evaluate on first daily close after CPI)
+
+<!-- ENTRY_END -->
+
+[2026-10-20 | ETH-USD | Underweight | pending]
+
+DECISION:
+**Rating**: Underweight
+
+**Executive Summary**: Cut ETH-USD to about 50–60% of your standard allocation. Do not exit fully and do not open a short. Sell about a third of the planned reduction now, in the 2400–2430 area. Sell the rest on rallies into 2450–2475, or into a failed retest of 2540–2550. Cut to 25–35% on a daily close below 2297, and to minimal on a daily close below the 200 SMA (~2149). Base stops on daily closes, place them 1.5–2 ATR away (about 140–180 points), and size so that a loss that large is affordable. Review over the next 2–6 weeks, with an explicit check after the unconfirmed October 26 Glamsterdam test date.
+
+**Investment Thesis**: Why reduce: all three analysts agree that the intermediate trend has broken. Price (2404.82) is below the 10 EMA (2451.78) and the 50 SMA (2550.35), and has closed below the 50 SMA every day since October 7. Lower highs run from 2776 down to 2443. MACD (-49.35) is below its signal line (-27.73). RSI (~38) has failed below 50 on every bounce since October 8. Closing lows keep stepping down (2471.91, 2418.21, 2399.80), and volume is light on the declines. The histogram has shrunk for nine sessions, but that means the selling is slowing, not reversing.
+
+Why Underweight and not Sell: price is still about 11.9% above the 200 SMA (2149), and the 50 SMA is still above the 200 SMA. That supports keeping a core position. The trader labeled the proposal 'Sell', but it is really a staged trim to 50–60%, which is Underweight. The Aggressive analyst made the weaker case. Its 5-to-1 short setup relies on a 25-point stop when ETH moves about 92 points a day, a weakness the analyst admitted. It treats 2320 as a sure target when that level is only an intraday shelf. It leans on a 30-message sentiment sample that can't carry much weight. And it proposes adding short exposure just before the October 26 event, which could cause a short squeeze. The Conservative analyst was right to object that this stop sits inside normal daily noise and that the missing data argues for smaller size.
+
+Why sell part now: the Neutral analyst found the gap in the Conservative plan. Price is already below the 2450–2475 sell zone. If you wait for a rally that never comes, you hold full weight through the next leg down. Selling part now, finishing on rallies, and using daily closes for stops fixes both the timing problem and the noisy-stop problem. It also gets most of the reduction done before October 26, so an outcome nobody can predict doesn't decide the result.
+
+What's missing: we have no macro data (rates, CPI, VIX), no verified ETH news, no ETF flows, and no on-chain metrics. The Glamsterdam date comes from one unverified source. These gaps lower conviction and are a further reason not to go to Sell.
+
+What would change the call: rebuild to standard weight in two steps only if both of these happen: (a) a daily close above about 2551 with volume rising on up days, and (b) the MACD histogram crossing above zero with MACD turning up. Overweight would also need verified support from outside the chart, such as macro data or flows. On the downside, a daily close below 2297 means cutting to 25–35%, and a close below 2149 means minimal or zero.
+
+**Price Target**: 2297.0
+
+**Time Horizon**: 2-6 weeks
+
+<!-- ENTRY_END -->
+
