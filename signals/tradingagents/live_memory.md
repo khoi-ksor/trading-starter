@@ -450,3 +450,51 @@ What would change this:
 
 <!-- ENTRY_END -->
 
+[2026-10-24 | BTC-USD | Hold | pending]
+
+DECISION:
+**Rating**: Hold
+
+**Executive Summary**: Hold BTC-USD: keep existing exposure at or slightly below your standard allocation and don't open new longs near 80,484. Add up to a full standard weight in two tranches only after a daily close above about 81,850 (back above the 10-day EMA and 50-day SMA) with the MACD histogram clearly shrinking from -307. Use one stop, the 74,945 September low, and size each tranche so a stop-out costs no more than your standard risk per trade. A daily close below 74,945 means cutting 25-50% (Underweight). Re-check weekly and around the CPI print.
+
+**Investment Thesis**: The two sides won on different questions. The conservative side won on whether to trade now. The bull side won on whether the trend is intact. That is why I'm holding: it isn't a split-the-difference call.
+
+Why not add now (aggressive case rejected): (1) The proposed trade doesn't pay. Entering around 80,000 with a 74,945 stop risks about 6.3%. The realistic first target, the 82,529 Bollinger middle band, is only about 3% away. Even the full move back to the 86,480 high gives only about 1.3:1. As the neutral analyst said, a quarter-size position shrinks the dollar loss but doesn't fix that ratio. (2) The aggressive analyst said the selling looks exhausted. The data says it's speeding up: the MACD histogram went from -127 to -197 to -307 in three sessions, and the MACD line moved from +2,486 to -205. RSI at 43 is not oversold. (3) Lighter volume (21.6B vs 30.5B/33.5B) can mean a healthy pause or a slow bleed. One day can't tell you which, and the 79,165 low closed without a reversal wick. (4) The $820M liquidation shows leverage was large, and the report says leverage is still present. (5) Macro has gotten worse since the 86,480 high: 97% odds of no Fed cuts, oil at a 5-month high, and tech stocks selling off, with CPI still ahead. The Polymarket tails are about equally fat per unit of distance (18% for +24% vs 8-10% for -32 to -38%), so the asymmetry the aggressive analyst claimed isn't there. (6) Waiting costs little: confirmation at 81,850 is only about 1.7% above spot.
+
+Why not trim (bearish overreach rejected): the 200-day SMA (72,899) is still rising, price is about 10% above it, the golden cross hasn't reversed, and price is within about 7% of the high. This is a pullback inside an uptrend, and 80,484 sits in the middle of the 75,000-81,850 range. Selling here would mean selling into support with no confirmed breakdown.
+
+Execution: the plan used two different stops (76,200 in the reasoning, 74,945 in the output). I'm using one, the structural 74,945. Upgrade path: half on a confirmed daily close above 81,850 with the histogram shrinking, half on a retest that holds 81,000-81,800. Targets are 85,300, then 86,480. Optional early starter (quarter size): only if price holds 74,945-75,000 with a high-volume reversal candle or a close back above 76,500. Neutral's variant of a small tranche on a hold above 79,709 with a reversal candle is acceptable for a flat book, but only after CPI. Downgrade: a daily close below 74,945 means cut 25-50%. A close below the 200-day (about 73,000) means cut to a minimal core.
+
+What's missing: no on-chain data, no full ETF flow series (IBIT dominates, so the buying base is narrow), no FRED or CPI data, and the Polymarket markets are thin. These gaps are why sizing stays modest and why the triggers, not forecasts, drive the next move. Signs that would change the call upward: broader ETF inflows beyond IBIT, falling funding rates and open interest, and a benign CPI print.
+
+**Price Target**: 86480.0
+
+**Time Horizon**: 1-3 months, re-evaluate weekly or on any trigger
+
+<!-- ENTRY_END -->
+
+[2026-10-24 | ETH-USD | Underweight | pending]
+
+DECISION:
+**Rating**: Underweight
+
+**Executive Summary**: Cut ETH-USD to about 50–60% of a standard allocation, and do it by selling into bounces toward 2400–2415 rather than at the lower Bollinger Band. Cut further only when a daily close confirms it: below 2280 takes exposure to about 35–40%, and below the 200 SMA (about 2157, and rising) takes it to 25% or less. Open no new longs and no new shorts here. Before executing anything, confirm the live price, since one read puts it near 2340 and another near 2250. The horizon is 1–3 months, reviewed at each trigger level.
+
+**Investment Thesis**: All three risk analysts agree on direction: reduce. They disagree on how far. The neutral ladder wins because it keeps the bearish read while acting only on levels the market confirms.
+
+Bearish evidence: ETH-USD at 2341.86 is below the 10 EMA (2415), the Bollinger middle (2472) and the 50 SMA (2546). The MACD line (-52) is below its signal (-41) and RSI is 35. The 2380–2650 base broke on October 7–8 on about 20B volume each day. Today's intraday low of 2280.55 has already gone through the 2320 October low and is testing the lower band at 2278. Outside ETH, BTC has lost its 50-day average, Fear & Greed has dropped from 71 to 51, and the Fed is priced for no cuts in 2026.
+
+Why not a full Sell or a deeper cut now: the 200 SMA is still rising and about 8% below price. Price is still above the 2251 breakout close, so the August breakout has been partly retraced, not reversed. The MACD histogram has narrowed from -36.7 to about -11. The conservative analyst rightly corrected several of the aggressive analyst's points. The Polymarket 78% figure is the chance of touching $2,250 at some point, not a forecast of where price closes, and an 8% touch over several months is ordinary for an asset moving about 4% a day. The equity tape was mixed, not uniformly lower. The 4M short-liquidation burst could fuel a bounce rather than prove the crowd is wrong. The aggressive analyst's 2415 stop is under one ATR (93), so normal daily noise could hit it. A tactical short is also outside an Underweight mandate and would need its own approval.
+
+Why not Hold: when price is sitting on the lower band and every short- and medium-term momentum signal is negative, waiting for the 200 SMA to break before cutting means taking most of the possible decline on the book. The neutral analyst made this point well.
+
+Data gaps make me keep sizes moderate. The live price is unverified (about 2340 vs about 2250), and there is no ETH news, ETF-flow, on-chain or FRED data. If spot really is about 2250, the 2280 trigger has already fired and the levels need rebuilding before trading.
+
+What changes the call: back toward Hold or a standard weight, in steps, after a daily close above 2415 on rising volume, then holding above 2472 with a positive MACD histogram and RSI above 50. A small tactical add is justified after a capitulation volume spike above 20B that reverses and holds above 2157. Further cuts, toward Sell, on a daily close below the 200 SMA.
+
+**Price Target**: 2157.0
+
+**Time Horizon**: 1-3 months
+
+<!-- ENTRY_END -->
+
