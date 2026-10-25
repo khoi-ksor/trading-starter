@@ -498,3 +498,55 @@ What changes the call: back toward Hold or a standard weight, in steps, after a 
 
 <!-- ENTRY_END -->
 
+[2026-10-25 | BTC-USD | Underweight | pending]
+
+DECISION:
+**Rating**: Underweight
+
+**Executive Summary**: Cut BTC-USD to about 50-60% of a standard allocation in three stages. Sell roughly a third of the excess now, between 80,300 and 81,000. Sell the next third in pieces into a bounce toward 81,600-82,300. Hold the last third for a confirmed daily close below 79,772, or a deeper move toward 76,246, which would justify cutting further to about 35-40%, then about 25%. Treat a daily close above 82,300 as the signal to stop selling, not as a stop-loss. A close above about 81,800 on rising volume, with MACD crossing back above its signal line, is the signal to rebuild toward standard. The horizon is about 2-6 weeks, and any adds should stay small until CPI is out.
+
+**Investment Thesis**: This is Underweight, not Sell. The trader labeled the proposal "Sell," but what it actually describes is trimming to 50-60% of standard while keeping a core position, which is Underweight. A full exit or a short isn't justified while the long-term trend holds. Price is about 10% above a rising 200-day average (72,947), the 50-day is still above the 200-day, Q3 was strong and ETF flows are positive. All three analysts accept that.
+
+The bearish short-term case wins on the evidence. Price (80,298) is below the 10 EMA (81,619), the 50 SMA (81,810) and the VWMA (82,012). MACD has crossed bearish and its histogram has widened for several sessions. The 79,145 intraday low undercut the mid-October lows, which is a real break in structure. Demand looks fragile: the rally failed at 87K despite a fresh Saylor purchase, the ETF rebound came mostly from one fund (IBIT), and markets put 96% odds on no Fed cuts in 2026. The reward-to-risk on holding a full position is poor: about +1.9% to 81,800 and +5.6% to 84,767, against -3.5% to 77,500 (42% touch odds on Polymarket), -5% to 76,246 and -9% to the 200-day.
+
+Where I side against the aggressive analyst: the 6:1 ratio depends on a 700-point stop, but the daily ATR is about 2,027. As the conservative analyst showed, that stop sits inside one normal day's range and right on the Bollinger middle band (82,269), so routine noise would likely trigger it. The 42% figure is also a touch probability from a thin market (about $721K in volume). It says nothing about which level gets hit first. So I'm not making the first sale bigger and not shorting. Volume falling from 33.5B to 11.4B during the slide is ambiguous. It may mean selling is exhausted, or that buyers have gone. That ambiguity supports staging the sales rather than doing them all at once.
+
+Where I side against the conservative analyst: as the neutral analyst pointed out, squeeze or liquidation risk applies to shorts, not to someone trimming a long. The real cost here is missed upside on the part sold. Bollinger Bands are narrowing and the 50 SMA is flattening, which suggests a directional move is coming soon. That argues for starting to trim now rather than waiting for every confirmation. I'm adopting the neutral analyst's corrections: base triggers on daily closes, not intraday prints (79,145 was an intraday low, so use a close below 79,772 or 79,145), and read 82,300 as the level where you stop selling.
+
+What would change the call: a close above 81,800 on rising volume with a bullish MACD cross means go back toward standard. Going above standard requires a close above 84,800, then the 86-87K range. A close below 79,772 on rising volume means cut to 35-40%, and below 76,246 means cut to about 25% as a core holding. A sustained close below the rising 200-day (about 72,950) moves this to Sell.
+
+Data I didn't have: on-chain metrics, funding rates and open interest, exchange flows, and the exact CPI date. The sentiment data (30 StockTwits messages) is too thin to use. Size whatever you keep so that a 2-ATR move (about 4,000) on it stays within your normal risk limits.
+
+**Price Target**: 77500.0
+
+**Time Horizon**: 2-6 weeks
+
+<!-- ENTRY_END -->
+
+[2026-10-25 | ETH-USD | Underweight | pending]
+
+DECISION:
+**Rating**: Underweight
+
+**Executive Summary**: Cut ETH-USD to about 50–60% of a standard allocation as a spot trim, not a short. Do about a third of the cut now near 2333. Sell the rest on bounces toward 2380–2400, or after a daily close below 2280 on heavier volume. If you hold no ETH, don't short it and don't buy the intraday dip toward 2280. Start rebuilding at about 25% of standard only after a daily close above 2402 on rising volume, or after a volume-backed hold of 2280/2250 that forms a higher low. Use a daily-close stop below the 200 SMA near 2150. A daily close below 2157 on expanding volume means cutting to 25% or less. Review in 1–2 weeks.
+
+**Investment Thesis**: The trader's plan points the right way, but the order as written doesn't work. The Research Manager's plan was Underweight, a trim with the long-term trend intact. The trader labeled it SELL with an entry at 2380 and a stop at 2402. That stop sits above entry, which is short logic, and it is only 22 points away, about a quarter of the roughly 90-point (3.9%) daily ATR. Aggressive, Conservative and Neutral all agreed it would get triggered by ordinary noise. Neutral also noted it doesn't fit a spot reduction. Selling only at 2380 also depends on a bounce that may never come. I'm keeping the direction and fixing the execution.
+
+Why the bear side wins on direction: price is 2332.72, below the 10 EMA (2402), the Bollinger middle (2454) and a falling 50 SMA (2543). ETH has posted four lower closes, broken the October range floor, and MACD (-55) is still below its signal (-44). The only bounce this month made a lower high. On the Polymarket market for a $2,250 dip, the odds rose 9 points in a week to 78%. Spot is only about 3.5% above that level with about two months left, so a random walk would touch it 85–90% of the time. That makes a test of 2250 the base case. The downside tails (10% for $1,500, 3% for $1,000) roughly offset the 12% upside tail for $3,500. BTC losing its 50-day average for the first time in 66 days, and the reported Hayes sale, are secondhand but match the price action.
+
+Why Aggressive's case falls short: the 2-to-1 to 4-to-1 payoff from a 2280 entry ignores probability. Its targets need a reclaim of the 10 EMA and the Bollinger middle, which hasn't happened. 2280 has never been shown to hold. The light 5.7B volume can't tell seller exhaustion apart from buyers stepping away. Calling the market a crowded short rests on a 30-message StockTwits sample whose tags contradict the message text.
+
+Why not Sell: the 200 SMA is rising (about 2094 to 2157) and price is about 8% above it. RSI is 34.6 and the MACD histogram has shrunk from -36.7 to -11.1, so selling momentum is fading. Neutral's point holds: this is still a pullback inside an uptrend, not a confirmed breakdown. Splitting the trim between now and later fixes Conservative's dependence on a bounce, and a 25% starter only after confirmation keeps us in if Aggressive turns out right. At that size, a stop near 2150 costs about 1.4% of a standard allocation.
+
+What would change the call:
+- **Move to Hold or Overweight:** a daily close above 2402 on 10B+ volume; a bullish MACD crossover with price holding above 2280; or a heavy-volume flush toward 2250–2157 followed by a higher low. A sharp repricing of the 96% 'no Fed cuts' odds would also count.
+- **Move toward Sell (25% or less):** a daily close below 2157 on expanding volume, or a slide toward 2000 with no volume-backed defence.
+
+Missing data: there is no ETH news, the FRED macro data is unavailable, and there are no on-chain, staking, fee or TVL figures. Sentiment samples are small. This call rests only on price, volume and prediction-market odds, so it is sized as a partial trim rather than an exit.
+
+**Price Target**: 2250.0
+
+**Time Horizon**: 2-6 weeks (formal review in 1-2 weeks or on any trigger)
+
+<!-- ENTRY_END -->
+
