@@ -550,3 +550,123 @@ Missing data: there is no ETH news, the FRED macro data is unavailable, and ther
 
 <!-- ENTRY_END -->
 
+[2026-10-27 | AAPL | Underweight | pending]
+
+DECISION:
+**Rating**: Underweight
+
+**Executive Summary**: Cut AAPL to about 60–70% of standard weight before the Nov. 2 report. That means selling roughly 30–40% of a standard position in 2–3 tranches, leaning into strength at $345–$350, and only after checking the live quote, since the last verified close is $347.73 on 10-23. If AAPL is already at $330–$335, sell only half the planned trim. If it has already gapped above $350, don't chase. Treat ~$349.83 as a rebuy/no-add level, not a stop. A daily close below $338.91 triggers another cut of about 15% of standard weight, down to ~50%. A close below the 50-day (~$329.5) on heavy volume means review cutting toward ~40%. Add no new money before the print. For holders who want to keep the remaining shares through earnings, a collar or protective puts sized to the options-implied move beats selling more stock.
+
+**Investment Thesis**: Why the rating is Underweight and not Sell: the trader's proposal is labelled 'Sell', but the trade it describes is a partial trim with the core kept. That is Underweight on this scale. Everyone in the debate agrees the business is not broken. Revenue has grown about 16% for three quarters, gross margin rose from 46.5% to 50.1%, cash generation is large, and the trend is up on every timeframe. That rules out a full exit or a short.
+
+Why reduce at all: the conservative and neutral analysts made the stronger case on risk versus reward going into a binary event.
+(1) Valuation. At ~36x forward EPS ($9.56), even 18% EPS growth leaves the stock near 31x at $347.73. The aggressive claim that the multiple 'compresses on its own' only works if earnings beat and estimates rise, and nobody showed evidence of either.
+(2) Earnings quality. Operating margin fell from 33.3% to 32.6% year over year and from 35.4% in FY26 Q1 to about 32.5% since. Operating income grew about 14%, slower than revenue. The neutral analyst rightly corrected the conservative's buyback point: share-count shrink explains only ~1.6 points of the 28.7% EPS growth. But net income growth (27%) running well ahead of operating income still points to help from below the operating line. The $107.7B free-cash-flow figure is unverified because the cash-flow data was inconsistent.
+(3) Technicals. Price is stuck at the top of a $330–$349 range that has held since late August, at the upper Bollinger Band (~$349.83). It sits ~5.5% above the 50-day and ~18% above the 200-day. The MACD line has fallen from ~6.10 to 4.37 while price rose, a ~30% loss of strength. AAPL has shown it can drop sharply on heavy volume (–7.4% on July 31).
+(4) Event risk. The iPhone Duo screen-crack issue is still unquantified, and delivery times stretching to January can be read as strong demand or as supply trouble.
+
+Where I side with the aggressive analyst: the trader's 'stop' at $349.83 above a $345 entry is the wrong logic for a trim. It should be a rebuy/no-add level. The thin StockTwits sample and the vesting-related insider sales are noise, not signals, in either direction.
+
+Where I side with the conservative analyst: moving the second trigger down to $329 gives up ~1.5 ATR more before acting, at a level that hasn't been tested as support in this window. So the trigger stays at a daily close below $338.91.
+
+The neutral analyst's point that 'trim to 60–70% weight' and 'sell 30–40%' are the same trade settles the sizing argument. The position size follows the plan.
+
+What would bring it back toward full weight after the print: at least two of these four.
+(a) Operating margin up year over year, not just gross margin.
+(b) A number or clear statement on the Duo screen problem and its warranty cost.
+(c) Forward EPS estimates raised after the report.
+(d) Either a weekly close above ~$352 on volume, backed by (a), or a pullback to $339–$343 or the low $330s that holds.
+
+What would push it lower, toward ~40%: operating margin falling year over year again while gross margin rises, weak EPS guidance, or a hot inflation print or jump in yields.
+
+Data gaps: there is no price after 10-23. FRED macro data (CPI, 10-year yield) was unavailable, which matters for a high-multiple stock when markets price ~96% odds of no Fed cuts in 2026. China and supply-chain tariff exposure wasn't assessed. Fill these gaps before setting final size.
+
+**Price Target**: 329.5
+
+**Time Horizon**: Through the Nov. 2 earnings report and 4–6 weeks after
+
+<!-- ENTRY_END -->
+
+[2026-10-27 | NVDA | Overweight | pending]
+
+DECISION:
+**Rating**: Overweight
+
+**Executive Summary**: Rating: Overweight. Build into NVDA in stages. Keep the total target at about one standard allocation, scaled down for the ~2.2 beta, rather than the plan's 1.0-1.25x. Start with roughly 25% of target in the 205-210 zone, and only after the missing 10-26 price is checked. Add about 35% on a close above 218.44 with the MACD histogram turning positive, or on a pullback to 203-205 that holds on closing prices. Add the last ~40% after the mid-November results (date still to be confirmed) if revenue grows quarter over quarter and gross margin is 73% or higher. Exit on a close below about 198, under the 200-day average (203.36). Size so that a 5-8% gap through the stop on a bad Alphabet print (10-28) still fits your per-position loss limit. Time horizon is 3-6 months, with a first upside reference at the 243 high.
+
+**Investment Thesis**: **Why Overweight and not Buy or Hold:** All three analysts agree the business and the long-term trend support owning NVDA. They disagree only on how fast to buy and how much. That makes this a sizing question, not a direction question, so a bullish staged rating fits better than Hold.
+
+**What decided the direction:**
+- **Fundamentals:** No analyst disputed them. Revenue is up about 106% a year, gross margin is 73-75%, operating margin is rising to about 66%, debt is low (0.17x equity) and the current ratio is 4.59x.
+- **Long-term trend:** Price (210.96) is still above a rising 200-day average (203.36), and the 50-day average is above the 200-day.
+- **Valuation:** At about 13.6x forward earnings, or about 21x even if earnings stop growing, the stock is reasonably priced for this growth.
+- **No evidence of weaker demand:** The bear points (AI bubble, open models, insider sales) are concerns, not data. The Stevens sale, about 4.2M shares or roughly $900M, is a modest negative. We don't know whether it was under a pre-set trading plan.
+
+**Why the size and first tranche are smaller than the trader proposed:**
+1. **The earnings base is less clean than the bull case assumed.** The Neutral analyst pointed out that last quarter revenue rose about 18% but diluted EPS rose only about 3%, and net income was higher than operating income. That undercuts the Research Manager's argument that ~18% quarterly EPS growth gets you to the $15.91 forward EPS. The low multiple only holds if the next four quarters average about $3.98 a share, against $2.46 now. Free cash flow figures also differ by about $30B depending on the source.
+2. **Short-term momentum is still negative.** Price is below the 10-day average and the 50-day average, MACD is below its signal line, and RSI is 38, which is not oversold. The 'divergence' and the one lower-volume day (10-23) are weak evidence that selling is over. The Conservative analyst is right that price can keep sliding along the lower Bollinger band (208).
+3. **Big events are close.** Alphabet's spending guidance comes out 10-28, the earnings date is only inferred, and prediction-market odds suggest rates stay high (no Fed cuts expected in 2026). With a 2.2 beta, the Conservative analyst's gap-risk point stands: a stop at 200 can fill well below 200.
+4. **The stop was too tight.** The Aggressive analyst's 208 entry and 200 stop is only about 1.3 ATR, which is inside normal daily movement. A close-based stop at about 197-199 still sits below the 200-day average and allows for normal noise. One caution on the Neutral analyst's sizing math: a 1% loss budget divided by a ~4.8% stop gives a position of about 21% of the portfolio. That cap is too generous for this beta. Gap risk and the standard-allocation ceiling should set the limit.
+
+**Checks before any order:** Confirm the 10-26 price (sentiment reports mention a rebound that day; if the stock is already above 212, wait for a pullback or the 218.44 reclaim). Reconcile free cash flow and the EPS gap against the 10-Q. Confirm the earnings date. Confirm whether Stevens' sales were under a pre-set trading plan. Macro data (yields, inflation, VIX) is also missing.
+
+**What would change the call:**
+- **Raise toward Buy:** Alphabet raises its spending plans, NVDA reclaims 218.44 with MACD turning positive, and the November report shows sequential growth, gross margin of 73% or higher, and earnings growth that tracks revenue.
+- **Cut to Underweight or exit:** Two closes below about 198-200, revenue falling quarter over quarter, gross margin below about 70%, cloud customers cutting orders in guidance, or the EPS gap turning out to be a recurring problem rather than a one-off. Don't add right before the earnings report. Consider protective puts on part of the position going into it.
+
+**Price Target**: 243.0
+
+**Time Horizon**: 3-6 months
+
+<!-- ENTRY_END -->
+
+[2026-10-27 | BTC-USD | Underweight | pending]
+
+DECISION:
+**Rating**: Underweight
+
+**Executive Summary**: Underweight BTC-USD. Cut to about 50–60% of your standard allocation, selling into relief bounces in the $81,300–$82,000 resistance cluster rather than at the $80K floor. On a daily close below $79,100, cut further to 25–35%. Go back to full size only after a daily close above about $81,800–$82,500 with the MACD histogram crossing above zero. Stay light through CPI, open no new longs at the floor, and size so that a move to the ~$73K 200-day is survivable. Horizon is 2–6 weeks, with a review after the CPI print.
+
+**Investment Thesis**: The bearish near-term case won the debate, but not by enough to justify a full exit. That matches the Research Manager's Underweight call. The trader labelled the proposal 'Sell', but it is really a partial reduction, so Underweight describes it more accurately.
+
+Evidence for reducing: Price is $80,121, below the 10 EMA ($81,305), the 50 SMA ($81,800) and the Bollinger midline ($81,984). The MACD line (-429) is far below its signal (-69). Closes have stepped lower (84,012 → 81,312 → 80,024 → 80,121), and BTC fell below its 50-day for the first time in 66 days. The push to ~$87K failed even with Strategy buying. Prediction-market tails have shifted down: odds of $100K by year-end fell 4 points to 18%, odds of a $55K dip rose to 12%, and markets give a 96% chance of no Fed cuts in 2026. The Conservative and Neutral analysts both correctly pointed out that the Aggressive analyst misread that skew.
+
+Evidence against a full exit: The 200-day (~$73K) is rising and sits about 9% below price. The MACD histogram has eased from -568 to -360. RSI is 42, so there has been no capitulation in either direction. Inflows are still positive, though they are concentrated in IBIT.
+
+The Aggressive counter-plan, buying at $79,100–$79,800 with a $76,300 stop, was rejected. As both other analysts showed, the levels it names give only about 1.2:1 reward-to-risk from $79,800, and about 1.75–1.9:1 at best, not the 2:1+ claimed. It also buys the exact level where the plan's own exit trigger sits, which invites whipsaw. The Aggressive analyst was right on one point: a $700 stop (about 0.35 ATR against a $1,908 ATR) sits inside normal daily noise. So the upside invalidation for this reduction should be a daily close above $81,800–$82,500 with histogram confirmation, not an intraday tick at $82,000. The Neutral analyst's small conditional long (about ¼ size, stop near $77,000, target $84,000) gives roughly 1.25:1 from today's price, not the stated 1.5:1. It is only worth taking after a confirmed hold above $79,100 with an improving histogram, and not before CPI.
+
+What would change the view:
+- Toward Hold: a daily close above ~$81,800–$82,500 with a positive histogram cross, a soft CPI print, or ETF inflows spreading beyond IBIT.
+- Toward Sell: a daily close below $79,100 (cut to 25–35%) or a weekly close below the ~$73K 200-day.
+
+Data gaps: there was no FRED macro data (fed funds rate, 10-year yield, CPI, VIX), no on-chain or funding-rate data, and the sentiment sample is small (21–27 labelled posts out of 30; the analysts disagree on the count). These gaps are why I'm moderating conviction rather than going to Sell.
+
+**Price Target**: 73000.0
+
+**Time Horizon**: 2-6 weeks (re-evaluate after CPI)
+
+<!-- ENTRY_END -->
+
+[2026-10-27 | ETH-USD | Underweight | pending]
+
+DECISION:
+**Rating**: Underweight
+
+**Executive Summary**: Cut ETH-USD to about 50-60% of standard allocation. Do it now rather than waiting for a bounce into 2388-2435. If you're already at or below that level, hold and add nothing. On a confirmed daily close below 2304, go to about 30%. On a confirmed daily close below the 200 SMA (~2158), go to 0-15%. Don't open new short positions. Rebuild to about 75% only on a daily close above ~2388 with MACD crossing above its signal line, and return to full size only on a sustained reclaim of the ~2540 50 SMA. Horizon is roughly 4-8 weeks, and the plan should be re-checked once a live quote and final daily bars are available.
+
+**Investment Thesis**: The direction isn't in dispute. All three risk analysts, the Research Manager and the trader agree the structure is bearish. ETH-USD closed at 2326.46, below the falling 10 EMA (2387.66), the Bollinger middle band (2434.98) and a 50 SMA (2539.58) that has turned down. MACD is -58.28, below its signal line at -46.89, and the histogram widened again from about -9.10 to -11.39. Each rebound has peaked lower (2534.70, 2496.63, ~2408, 2384), and the RSI bounce to 45.94 failed. Breadth is weak too: BTC is below its 50-day average for the first time in 66 days, and HBAR and XLM fell 14-17% in two weeks. The open question was how big the position should be.
+
+**Why not Sell or a short (aggressive case rejected):** The aggressive analyst's 5:1 payoff depends on a 2435 stop that is only about 0.56 ATR away (ATR 84.47), so normal daily noise could hit it. The neutral analyst showed that risking 1% of the portfolio on that stop means a short worth about half the portfolio, which brings borrowing, funding and liquidation risk the plan never allowed for. The case also overstated its evidence. Price hasn't actually tested 2158 this year. The Hayes sale comes from one unverified Reddit post. The 82% Polymarket odds of touching 2250 mostly reflect that spot is only ~3% above that level in a market that moves 3.6% a day. Meanwhile the long-term structure is intact: price is ~7.8% above a rising 200 SMA, the 50 SMA is still above the 200 SMA, and selling has been orderly. The data is also incomplete: the 10-26 row is missing, the 10-27 bar may be partial, and there's no news, macro data or live quote. That is too thin to support a full exit or a short. Cutting a long by 40-50% gives most of the same downside protection without those risks.
+
+**Why not Hold (conservative case partly accepted):** The conservative analyst is right about the data gaps and the squeeze risk. But the bearish evidence covers weeks of lower highs and moving-average structure, not a single uncertain bar, so incomplete data is a reason to keep positions smaller, not to do nothing. Hold would leave full exposure in a confirmed downtrend.
+
+**Changes adopted from the neutral analyst:** (1) The trader's plan to sell bounces into 2388-2435 has a gap. Price is already below that zone, so the orders might never fill. Make the first cut to 50-60% now, or within a few sessions at most, and use 2388-2435 only for any remaining excess. (2) The 2304 and 2158 cuts should trigger on confirmed daily closes, not intraday prints or the possibly partial 10-27 bar. (3) If your mandate allows options, a small put hedge on the remaining position is better than a naked short.
+
+**What would change the call:** A daily close above ~2388 with a bullish MACD cross and a positive histogram would move the rating toward Hold (~75% allocation), and a sustained reclaim of ~2540 would justify full size. A confirmed close below 2158 would turn this into a Sell (0-15%), with the August base near 1916 and the 52-week low at 1506 as the next reference levels. Before acting, check the live quote, the filled-in 10-26 row, the macro data (rates, CPI, VIX) and the discounts on ETH treasury vehicles such as BMNR (~15% below NAV).
+
+**Price Target**: 2158.0
+
+**Time Horizon**: 4-8 weeks (through year-end), re-evaluated on confirmed daily closes
+
+<!-- ENTRY_END -->
+
