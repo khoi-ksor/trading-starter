@@ -1165,7 +1165,7 @@ The 5-day alpha of +2.2% against a raw return of -0.8% means the Underweight cal
 
 <!-- ENTRY_END -->
 
-[2026-10-31 | BTC-USD | Underweight | pending]
+[2026-10-31 | BTC-USD | Underweight | -3.2% | -0.5% | 5d | resolved:2026-11-06]
 
 DECISION:
 **Rating**: Underweight
@@ -1198,9 +1198,12 @@ DECISION:
 
 **Time Horizon**: 2-6 weeks (5-day check: daily close below 75,000 confirms, above 79,982 challenges)
 
+REFLECTION:
+The 5-day raw return of -3.2% and alpha of -0.5% against SPY is a modest underperformance that cannot judge a 2–6 week Underweight thesis, so this window is too short to confirm or refute the call. The window did move in the bearish direction, consistent with the thesis that BTC-USD would test the 75–77k zone and possibly break below 75,000, but the alpha is small enough that it reflects noise as much as signal. The thesis's near-term breakdown call (lower highs, 10 EMA rollover, macro headwinds from no cuts and hike odds) is partially supported, while the 200 SMA retest target at 74k remains unproven. The lesson for future analysis: when a 5-day window is shorter than the stated horizon, state explicitly that the check is inconclusive, and anchor the review on whether the specific level triggers (75k close, 79,982 close) were hit rather than on alpha magnitude.
+
 <!-- ENTRY_END -->
 
-[2026-10-31 | ETH-USD | Underweight | pending]
+[2026-10-31 | ETH-USD | Underweight | -1.7% | +1.0% | 5d | resolved:2026-11-06]
 
 DECISION:
 **Rating**: Underweight
@@ -1229,6 +1232,9 @@ What would change the call:
 **Price Target**: 2158.49
 
 **Time Horizon**: 2-6 weeks
+
+REFLECTION:
+Underweight on ETH-USD returned -1.7% raw over 5 days but +1.0% alpha versus SPY, so the directional call was right on an absolute basis yet the relative result was positive because the broader market fell further. Five sessions is too short to judge a 2-6 week staged-trim thesis, so this window only shows direction and says little about the structural call. The window undercuts the "lower highs, price below 10 EMA and 50 SMA" trend case only partly: price did fall toward the 2233 trigger, but the 200 SMA at 2158.49 was not breached, which is the level that would confirm the regime change. Lesson for the next analysis: when a rating is framed as a staged trim, state the expected 5-day alpha relative to SPY as well as raw return, and specify whether an early adverse move would be treated as noise or as a trigger, since a positive-alpha loss is easy to misread.
 
 <!-- ENTRY_END -->
 
@@ -2159,6 +2165,76 @@ I also keep the earlier ~2,110 line (half an ATR below the 200 SMA), because a 2
 **Price Target**: 2156.0
 
 **Time Horizon**: 2-6 weeks (5-day checkpoint: no daily close above 2,332 and ETH-USD lagging SPY)
+
+<!-- ENTRY_END -->
+
+[2026-11-08 | BTC-USD | Underweight | pending]
+
+DECISION:
+**Rating**: Underweight
+
+**Executive Summary**: Underweight BTC-USD: bring it down to about 50% of a standard allocation (40–60%) as a reduction of an existing long, not a new short. Sell in three steps. Sell about one-third of the planned reduction now. Put limit sells for the second third at 77.0–77.5k (the 10 EMA). Sell the last third on a daily close below 74,324 (the lower Bollinger band). If the 77k limits haven't filled before that close, sell the second third then too. On a confirmed daily close below the 200 SMA (~73.2k), cut to 0–25%. If you hold no BTC-USD, don't open a long. Treat 79,300 as the level for buying back, not as a stop. Act on daily closes only, because the 11-08 bar looks partial. Horizon is 2–6 weeks.
+
+**Investment Thesis**: **Why Underweight.** All three risk analysts agree on direction: cut exposure and don't add. They differ only on how much and how. The case rests on measures that don't depend on any single headline:
+- **Price structure:** the close of 75,670 sits below the 10 EMA (77,472), the Bollinger middle (79,326) and the 50 SMA (81,870).
+- **Momentum:** MACD is −1,493, the lowest reading in the window, and the histogram widened again after the Nov 4 bounce. RSI peaked lower on each rally (about 50.6 on Nov 4, 37.9 now), so rallies are being sold.
+- **Support:** each retest of the 75.7–75.9k area has closed a little lower.
+- **Flows:** the Coinbase discount has run for 61 days and spot ETFs have seen about $1.3B of outflows. Polymarket puts about 98% on no Fed cuts in 2026 and leans to the downside ($55k at 10% vs $100k at 8%).
+
+The trade matches the rule from our recent calls: cut in stages, with each cut tied to a daily close. The last two Underweights were in line with or ahead of the benchmark on direction. The 10-31 call was down 3.2% raw over 5 days, and price has since gone from about 77.8k to 75.7k, testing the 75–77k zone we expected.
+
+**Why not Sell.** The 200 SMA (73,187) is still rising and price is only 3.4% above it. The 50 SMA is still well above the 200 SMA, so there's no death cross. RSI isn't oversold, and ATR is steady at about 2.2k, which points to an orderly decline rather than forced liquidation. As the Conservative analyst noted, the 4% recession odds suggest this is a flow and risk-appetite selloff, and those can reverse sharply. The Neutral analyst caught that both reports trace the $1.3B outflow figure to the same article, so it's one data point, not two. Selling everything about 3% above major support, on partly unconfirmed flow data, gives poor risk/reward. Our 10-29 call is a warning here: a short-term bounce (+4.2%) went against an Underweight we sized too aggressively.
+
+**Rejecting the Aggressive plan.** It treats a reduction as a short, which brings borrow, funding and squeeze risk the plan doesn't include. Its stop at 79,300 is barely 1 ATR away and sits on the exact level that would signal a recovery. It treats annual tail odds and the 57.7k 52-week low as near-term targets. And it adds into failed retests, which builds a losing position.
+
+**Taking from Conservative and Neutral.** I follow Conservative on not adding and on judging every trigger by daily closes. I follow Neutral's correction on staging: selling half of the reduction right at 75.7k means selling close to support, so I take only a third now. I also adopt Neutral's point that, on a partial sale, 79,300 is the level for buying back rather than a stop. Conservative's own stop suggestions contradicted each other (a close above the 10 EMA vs a 2-ATR stop), and Neutral pointed that out.
+
+**5-day check (raw and vs SPY).** I expect either a bounce into 77–77.5k that fails, or a test of 74.3k. Two signals would go against the call: BTC holding steady while SPY falls (positive alpha but no break lower), or a daily close above 79,300. A flat week between 74.3k and 77.5k doesn't settle the call.
+
+**What changes the call.**
+- **Back to Hold (standard weight), in tranches,** if two of these three happen:
+  - (a) daily closes above 77.5k, then holding above 79.3k with the MACD histogram narrowing;
+  - (b) several sessions of net ETF inflows;
+  - (c) the Coinbase premium turning positive.
+- **Overweight** if all three happen together with a MACD cross up, targeting about 82k.
+- **Cut to 0–25%** on a confirmed daily close below 73.2k, especially on rising volume, or if BTC starts falling alongside Nasdaq/AI equities.
+
+**Data gaps.** Several inputs are missing: the 11-08 bar looks partial, the weekly close versus the 50-week MA is unknown, there's no FRED data (yields, CPI, VIX), no full ETF flow series and no funding or open-interest data. These gaps are why I'm cutting to about half rather than further.
+
+**Target.** About 73.2–74k, the zone where price would retest the 200 SMA, over 2–4 weeks if 74.3k breaks.
+
+**Price Target**: 73500.0
+
+**Time Horizon**: 2-6 weeks (5-day check on daily closes vs 74,324 and 79,300)
+
+<!-- ENTRY_END -->
+
+[2026-11-08 | ETH-USD | Underweight | pending]
+
+DECISION:
+**Rating**: Underweight
+
+**Executive Summary**: Hold ETH-USD at no more than about 50% of a standard allocation and make no new buys near $2,232. If you hold more, trim in two steps: first get down to about two-thirds of standard, then sell the rest of the trim into any bounce toward $2,279–2,323, or on a daily close below $2,155.76, whichever comes first. If earlier calls already took you to 35–50%, stay there. 50% is a ceiling, not a level to buy back up to. On a daily close below the 200 SMA (~$2,156) with volume of 8B or more, cut to 0–25%. On lighter volume, wait for a second close before cutting. Rebuild to about 75% on a daily close above $2,279 with volume of 10B or more and a positive MACD histogram, and return to full size above $2,323. Don't open outright shorts. The horizon is 2–6 weeks, reviewed at each daily close.
+
+**Investment Thesis**: Rating: Underweight. The trader labelled this a "Sell," but the actual instruction is to trim to about half. On this scale that is Underweight, not an exit. The bearish case wins, but not by enough to justify a full exit.
+
+Why reduce. Every analyst agrees the trend is down. ETH-USD (~$2,231.80) is below the falling 10 EMA (2,279), the Bollinger middle (2,323, down from 2,650) and the 50 SMA (2,491, down from ~2,556). The Conservative analyst made the decisive point: the MACD histogram turned positive on Nov 4 but has shrunk every session since (+8.11 to +0.77), and the MACD line is still near -60. The turn the bull is counting on is fading, not building. The outside evidence leans the same way, though not decisively: $430M of ETF outflows in one session, $1.03B in liquidations, an unresolved Binance hack whose mechanism is unverified, about 98% odds of no Fed cuts in 2026, and prediction-market tails tilted to the downside (11% for $1,500 vs 5% for $3,500). The only evidence of accumulation is a single unverified Reddit post written before the crash.
+
+Why the Aggressive case fails. Its 3:1 ratio puts the stop 3.5% away, at the 200 SMA. The Neutral analyst correctly pointed out that ATR is about 89 points (~4%), so one ordinary day can hit that stop. The 50 SMA target is also falling, and reaching it means reclaiming 2,279 and 2,323 first. The Aggressive analyst says thin volume (3.88B) means sellers are exhausted. It is just as consistent with buyers being absent, and in thin markets price can gap through a level. The RSI higher lows (30.3, 32.1, 33.2) are real but small.
+
+Why not Sell. The 200 SMA is still rising and still holding. The 50 SMA is above the 200 SMA. Momentum has stopped getting worse. And the track record argues for modest size: on 10-29, an Underweight call met an +8.1% rally, and other recent 5-day results were mixed (alpha from -2.0% to +6.6%). Over-cutting just above support has been costly. I'm also adopting the Neutral analyst's staged execution and the Aggressive analyst's whipsaw critique. The trader's $2,323 "stop" sits above the sell price, so it protects nothing on a trimmed position. Treat it as the level for returning to full size. The real controls are the size ceiling and close-based triggers at 2,156 and 2,279. Tying the 2,156 cut to volume, with a two-close rule when volume is light, follows the 10-31 lesson that a single weak close inside one ATR is noise.
+
+Expected path, so the call can be checked later. Over the next 5 sessions the base case is range trading between about $2,150 and $2,300, with the 200 SMA probably tested. I expect ETH-USD to roughly match or slightly lag SPY. Read a 5-day result as evidence of direction only. Grade the thesis on which comes first: a close below $2,156, which confirms it, or a close above $2,279 on 10B+ volume, which invalidates the near-term call and triggers the rebuild.
+
+What would change the call:
+- Toward Hold or Overweight: a close above 2,279 on 10B+ volume with a positive histogram, then holding above 2,323 while the 50 SMA flattens.
+- Toward Sell: a high-volume close below 2,156, or any close below about 2,066 (one ATR under support). Also: confirmation that the Binance hack exploited an ETH-specific weakness, or regulatory follow-up.
+
+Missing data: there is no live spot quote, no on-chain data, no full ETF flow history and no FRED macro data. Check the price on a second source before acting on any of these tight thresholds.
+
+**Price Target**: 2156.0
+
+**Time Horizon**: 2-6 weeks (5-day checkpoint: close below 2,156 vs close above 2,279)
 
 <!-- ENTRY_END -->
 
