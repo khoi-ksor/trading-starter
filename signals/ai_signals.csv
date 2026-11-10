@@ -131,3 +131,7 @@ date,symbol,rating,source
 2026-11-09,NVDA,Hold,ai:claude-opus-5-5/claude-haiku-5-5
 2026-11-09,BTC-USD,Underweight,ai:claude-opus-5-5/claude-haiku-5-5
 2026-11-09,ETH-USD,Underweight,ai:claude-opus-5-5/claude-haiku-5-5
+2026-11-10,AAPL,Hold,ai:claude-opus-5-5/claude-haiku-5-5
+2026-11-10,NVDA,Overweight,ai:claude-opus-5-5/claude-haiku-5-5
+2026-11-10,BTC-USD,Underweight,ai:claude-opus-5-5/claude-haiku-5-5
+2026-11-10,ETH-USD,Underweight,ai:claude-opus-5-5/claude-haiku-5-5
