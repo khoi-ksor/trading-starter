@@ -1658,7 +1658,7 @@ The 5-day alpha of -10.2% (raw -12.0%) supports the Underweight direction, since
 
 <!-- ENTRY_END -->
 
-[2026-11-04 | AAPL | Underweight | pending]
+[2026-11-04 | AAPL | Underweight | +3.2% | -0.1% | 5d | resolved:2026-11-12]
 
 DECISION:
 **Rating**: Underweight
@@ -1699,9 +1699,12 @@ Your holdings weren't provided, so apply the percentages to your own position.
 
 **Time Horizon**: 1-3 months; first trigger review after 5 trading days
 
+REFLECTION:
+The 5-day raw return was +3.2% but alpha was -0.1%, so the stock roughly tracked SPY and the Underweight call was neither confirmed nor refuted; a 5-day window cannot test a 1-3 month thesis built on multiple compression and margin risk. The window did not test the core claims about valuation at 31-33x forward earnings or the memory-cost hit to gross margin, though the market's broad rise makes the underweight look less justified on relative performance. The lesson for the next similar call is to pair any Underweight with explicit short-window triggers (such as a confirmed close below the 50-day average or a reclaim of the 10-day EMA) and to verify the latest close before writing levels, since the 11/3 price data was incomplete.
+
 <!-- ENTRY_END -->
 
-[2026-11-04 | NVDA | Overweight | pending]
+[2026-11-04 | NVDA | Overweight | -8.5% | -11.8% | 5d | resolved:2026-11-12]
 
 DECISION:
 **Rating**: Overweight
@@ -1747,6 +1750,9 @@ Target: a retest of the October high near $239 if the trend repairs and the numb
 **Price Target**: 239.0
 
 **Time Horizon**: 3-6 months (staged around the earnings report, likely around Nov 18, unconfirmed)
+
+REFLECTION:
+The 5-day alpha of -11.8% (raw -8.5%) is a clear adverse result for an Overweight call, though five days is too short to judge a 3-6 month thesis. The window undercuts the timing and support assumptions more than the fundamentals, since the stock broke through the $200 area the plan treated as entry support, while the unreconciled cash-flow, margin, and insider-sale questions remain untested. With the fourth straight negative-alpha NVDA Overweight call, the next analysis should treat the chart and support levels as the primary test before rating, and should require the stop-out and no-rebuy rules to be checked against the actual entry fill and the Nov 3 price data before a rating is issued.
 
 <!-- ENTRY_END -->
 
@@ -2069,7 +2075,7 @@ Our own track record matters here. The last five NVDA calls were all Overweight,
 
 <!-- ENTRY_END -->
 
-[2026-11-06 | BTC-USD | Underweight | pending]
+[2026-11-06 | BTC-USD | Underweight | -5.8% | -8.8% | 5d | resolved:2026-11-12]
 
 DECISION:
 **Rating**: Underweight
@@ -2101,9 +2107,12 @@ What would change the call:
 
 **Time Horizon**: 2-6 weeks (checkpoint at 5-10 sessions on daily closes vs 75,437 / 73,192 down and 80,500 up)
 
+REFLECTION:
+The 5-day alpha of -8.8% (raw -5.8%) supports the Underweight direction and falls beyond the flat-to-modestly-negative range I set, though a 5-day window cannot validate a 2-6 week thesis. The move supports the bearish leg: price stayed below the 10 EMA and drifted toward the 75,437 trigger without a sustained bounce into 78,000-79,900, but it never tested the 200 SMA or the 80,500 cancel level, so the recovery-risk side of the thesis remains unproven. Next time, when a trim depends on bounce-zone resting orders, log which fills were realized versus assumed and state the expected 5-day range in ATR units, since a move of about 1.9 ATR should be treated as a signal rather than noise.
+
 <!-- ENTRY_END -->
 
-[2026-11-06 | ETH-USD | Underweight | pending]
+[2026-11-06 | ETH-USD | Underweight | -9.8% | -12.8% | 5d | resolved:2026-11-12]
 
 DECISION:
 **Rating**: Underweight
@@ -2139,6 +2148,9 @@ Data gaps: the 11/05 row is missing, the 11/06 close is unreconciled, there's no
 **Price Target**: 2157.0
 
 **Time Horizon**: 5-10 sessions to the first checkpoint (2190/2157 test); 2-6 weeks overall
+
+REFLECTION:
+The 5-day alpha of -12.8% (raw -9.8%) supports the Underweight direction, since ETH fell sharply while SPY was roughly flat to slightly down, but five sessions is too short to validate a 2–6 week thesis or the 2157 price target. The window supports the core bearish claim that buyers were stepping back and the 11/04 rally failed, and it undercuts the view that the 11/04 rally signaled a durable bottom. The lesson for the next similar call: scale the trim in tiers tied to confirmed closes as the decision did, but state the first checkpoint with a specific date and relative-performance threshold, and record that the 11/05 data gap and the $0.77 source discrepancy were unresolved at decision time.
 
 <!-- ENTRY_END -->
 
@@ -3114,6 +3126,98 @@ DECISION:
 **Price Target**: 1858.0
 
 **Time Horizon**: 2-6 weeks (review on daily-close triggers at 1,916 / 1,830 / 2,149; formal check at ~10 sessions)
+
+<!-- ENTRY_END -->
+
+[2026-11-14 | BTC-USD | Underweight | pending]
+
+DECISION:
+**Rating**: Underweight
+
+**Executive Summary**: Underweight BTC-USD. Before acting, confirm the 11-14 close and the missing 11-13 bar against a second source. Then cap exposure at 50% of your standard allocation, and hold 25–40% if you can tolerate the lower end. If you followed our earlier rule to cut to 0–25% on a close below the 200 SMA, stay there and do not buy back up to 50%. Do not short and do not add new longs while RSI is near 25. Make any remaining trims with limit orders into a rejected bounce at 70,000–73,700, not at market at oversold lows. A daily close below 64,681 means cutting to 0–25%. 70,052 is the level for reviewing whether to rebuild. It is not a stop. Horizon is 2–6 weeks.
+
+**Investment Thesis**: **Why Underweight and not Sell.** The trader labeled this "Sell", but the plan cuts to about half and explicitly bans shorts. That is a reduction, so it maps to Underweight. All three analysts accept the bearish read:
+- BTC-USD closed at 68,285. That is below the 10 EMA (73,718), the 200 SMA (73,036) and the 50 SMA (80,536), and about 21% below the 86,603 high.
+- The MACD histogram widened from -477 to -707, so selling is speeding up.
+- The Bollinger Bands are widening to the downside.
+- ETF outflows continue, inflation came in hot, yields are rising, and markets expect no Fed cuts.
+- On Polymarket, the odds of a $55K touch rose to 20% and the odds of $100K fell to 3%.
+
+I stop short of Sell for three reasons:
+- RSI at 25, a close below the lower band and extreme-fear sentiment make a sharp relief bounce plausible.
+- Volume on the decline (42.2B) is well below breakout levels (74.5B), so this is not a confirmed capitulation, and it is not a confirmed bottom either.
+- The 50 SMA is still above the 200 SMA (no death cross), and the 11-13 and 11-14 data problems mean the exact levels are uncertain.
+
+**Consistency with prior calls (the most important adjustment).** Our 11-03 to 11-06 BTC-USD Underweights set a daily close below the 200 SMA (about 73,150–73,190) as the trigger to cut to 0–25%. That trigger has now fired: price closed about 6.5% below the 200 SMA. The structural question those calls left open has been answered bearishly. The Research Manager's 50% target is therefore a ceiling, not a level to rebuild toward. Holders already at 0–25% should stay there. Holders still above 50% should cut now, starting with the excess above 50%.
+
+**Weighing the analysts.**
+
+*Aggressive (press the short and add into the bounce): rejected.* The Conservative and Neutral analysts found two decisive flaws:
+- The 70,052 stop is about 1,767 points away, less than one ATR (about 2,337, or 3.4%), so ordinary daily noise would trigger it. That makes the stated 2:1 and 6:1 reward-to-risk ratios unreliable.
+- The proposed scaling zone of 70,000–73,700 sits mostly above that "hard" stop. Adding there means averaging into a squeeze or moving the stop.
+
+The Aggressive analyst also mixed up the size of the price move with the share of the portfolio at risk, and assumed a short book we have no evidence of.
+
+*Conservative:* right on data verification, on not opening shorts, and on not averaging up. It understates how much bad news is still unabsorbed after a roughly 10% weekly drop.
+
+*Neutral:* gave the most usable mechanics, and I adopt them:
+- 70,052 becomes a daily-close re-evaluation level rather than an intraday stop.
+- Trim further only on a rejection in the bounce zone: a lower high, the histogram no longer improving, and a close back down.
+- Treat 64,681 as the first downside reference, and 57,748 (the 52-week low) as a scenario to reassess, not a planned exit.
+
+**Execution and risk.**
+- Use limit orders, not market orders, in an asset that is prone to liquidations.
+- Size the remaining position so a 2-ATR move (about 4,700) costs no more than about 1% of equity.
+- Reduce further ahead of the CPI and PPI releases.
+- Following the 11-06 lesson, record which bounce-zone fills actually happened and which were only assumed.
+
+**Expectations for the next 5 sessions (in ATR terms).** I expect flat to modestly negative returns, with a relief bounce of up to about 1 ATR (toward 70,000–70,600) quite possible. A move of less than 1 ATR either way is noise. A move of 2 ATR or more is a signal. Five days measures timing, not the 2–6 week thesis.
+
+**What would change the call.**
+- *Toward Sell (0–25%):* a daily close below 64,681, especially on rising volume; a 50/200 SMA death cross; continued ETF outflows; or a hawkish CPI/PPI surprise.
+- *Toward Hold:* a daily close above 70,052 with the MACD histogram turning up from about -707 lets you rebuild to about 50%, or 75% if you are already at 50%. Full weight needs two or more daily closes above about 73,000 with the 10 EMA holding above the 200 SMA.
+- *Capitulation case:* a high-volume flush toward 57,748–64,681 that reverses on the daily close would justify small 10–15% buy-back tranches.
+
+**Missing data:** a verified 11-13/11-14 close, on-chain data, funding rates, open interest, daily ETF flow sizes, and Reddit sentiment (unavailable; the StockTwits sample is thin and dominated by one account).
+
+**Price Target**: 64681.0
+
+**Time Horizon**: 2-6 weeks; check daily closes against 64,681 (down) and 70,052/73,000 (up) over the next 5-10 sessions and after CPI/PPI
+
+<!-- ENTRY_END -->
+
+[2026-11-14 | ETH-USD | Underweight | pending]
+
+DECISION:
+**Rating**: Underweight
+
+**Executive Summary**: Underweight ETH-USD and target about 25–35% of a standard allocation. This is a spot trim, not a short. If you are above 50% of standard, cut to 50% now at market (about 1929) and get to about 35% within two sessions. Use any bounce into 2000–2050 to go lower, but do not wait for one. If you already followed the 11-06 ladder down to 25–35%, stay there. A daily close below 1790 on heavy volume means cutting to about 25% or less. Exit if 1500 is tested with no buyers stepping in. Do not open a new long, and do not start rebuilding until price closes back above the lower Bollinger band (~1962) and the MACD histogram turns up. Horizon is 2–6 weeks, with a checkpoint after 5–7 sessions and after the next CPI/Fed event.
+
+**Investment Thesis**: **Direction.** All three analysts and the research plan agree on direction. ETH-USD at 1929.08 is below the 10 EMA (2104), the 200 SMA (~2147), the 50 SMA (~2414) and the lower Bollinger band (1962). The MACD histogram has widened for six sessions (-6.31 to -24.75). RSI keeps making lower highs (54, 39.7, 34.0, 30.6, 24.9). Volume is rising on each lower low (13.4B, then 15.1B), and every support level from 2400 down to 2050 has failed. Flows point the same way: $2.3B of ETF outflows over 45 days and $680M to more than $1B of liquidations. That rules out Hold or anything more bullish. The bull's own rules also argue against buying now: price has not closed back inside the band, the histogram is still widening, and a stop just under 1926 is about $3 away when ATR is about 93.
+
+**Why 25–35% and not the plan's 50%.** My 11-06 Underweight set this ladder: cut to 25–35% after a second close below 2241, and to 0–25% on a close below the 200 SMA (~2157), ideally confirmed by a close under 2100. Both triggers have now fired decisively, with price about 10% below 2157. On 11-05 I learned that ignoring my own stated triggers is a mistake, and every Underweight call since 10-20 has been confirmed in its 5-day window (-4.2% to -12.8% alpha). The Conservative analyst is right that a plan built on a bounce has no answer if the bounce never comes. My 11-02 lesson says the same thing: resting sell orders above spot often never filled during this decline. So the cut happens at market now, and a bounce is only a chance to sell more.
+
+**Why not Sell or a full exit.** RSI is 24.9, price is below the lower band, and retail sentiment reads as capitulation. Selling everything here risks getting caught in a sharp relief move. ATR is about 4.8% of price, and ETH has jumped 17.5% in a single session before. The Neutral analyst made the key point: both the bull and bear sides are selling into the same exhaustion they warn about. Several confirming inputs are also thin: Polymarket contracts of about $1M, 16 labelled posts, no FRED macro data, no on-chain data, and no 11-13 PPI result. The 50 SMA is still above the 200 SMA, so there is no death cross yet. Price is about 28% above the 52-week low near 1506, which buyers defended in June. Keeping a 25–35% core position leaves room for a short-covering bounce if a softer inflation print arrives.
+
+**Execution corrections.** The trader's "entry 2000 / stop 1790" mixes short-side logic into a plan to trim a long. The Aggressive analyst flagged this and I agree with the fix: 1790 is a trigger to cut further, set at about 1.5–2× ATR below price, not a stop-loss. Any short has to be a separate decision with its own risk budget, a funding-cost check, a squeeze analysis and a stop above entry. I am not recommending one.
+
+**Rebuild ladder, confirmation only.** The 11-05 lesson is not to add on a single reclaimed level while the averages are falling overhead. Steps:
+- Price closes above about 1962 and the histogram turns up: stop reducing, but don't add yet.
+- A daily close above the 10 EMA (~2104) followed by a higher low: go to about 50%.
+- Two daily closes above the 200 SMA (~2147), with up-day volume larger than down-day volume and ETF outflows slowing or reversing: go to about 75%.
+- A sustained close above the 50 SMA (~2414): full weight.
+
+**Expected path and checkpoint.** 1790 is about 1.5 ATR away, so over the next 5–7 sessions I expect either a test of 1790–1850 or a relief move that stalls below 2050–2104. The call is working if ETH-USD lags SPY by 3% or more and doesn't hold a close above 2104. It is being refuted if price closes above 2104 and then the 200 SMA, or if a high-volume reversal day after a volume climax appears. Five days of returns cannot validate the 2–6 week thesis.
+
+**What would change the call.**
+- Toward Sell (0–15%): a 50/200 death cross while price is below 2147, a heavy-volume close below 1790, or a hawkish CPI/Fed surprise while ETF outflows continue.
+- Toward Hold: a capitulation reversal plus a reclaim of 2104 and then 2147 with ETF flows turning positive.
+
+**Data gaps.** There is no on-chain data (staking, active addresses, fee burn), no 11-13 PPI result, no FRED CPI, Fed funds or 10-year data, and no funding or open-interest data. The two sources also disagree on the 50-day average (2414 vs 2429). Recompute any trigger within about $5 of price before acting on it.
+
+**Price Target**: 1790.0
+
+**Time Horizon**: 2-6 weeks (checkpoint after 5-7 sessions and after the next CPI/Fed event)
 
 <!-- ENTRY_END -->
 
