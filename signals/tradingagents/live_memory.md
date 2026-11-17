@@ -2026,7 +2026,7 @@ The 5-day alpha of -11.4% (raw -8.0%, implying SPY gained roughly 3.4%) is a cle
 
 <!-- ENTRY_END -->
 
-[2026-11-06 | AAPL | Hold | pending]
+[2026-11-06 | AAPL | Hold | +0.7% | +2.4% | 5d | resolved:2026-11-16]
 
 DECISION:
 **Rating**: Hold
@@ -2047,9 +2047,12 @@ Upgrade to Overweight if the September quarter shows revenue growth of about 15%
 
 **Time Horizon**: 4-8 weeks, to be reviewed when the September-quarter data and jobs report are in
 
+REFLECTION:
+The 5-day alpha of +2.4% (raw +0.7%) is favorable to the Hold, but five days is too short to judge a 4-8 week thesis that depends on the September-quarter numbers. This window supports the relative-strength half of the thesis: the stock held up while the Nasdaq fell about 5.5%, which justified ruling out Underweight. It does nothing to test the valuation and margin concerns (38x trailing, operating margin down from 35.4% to 32.6%), which remain open until the refund-adjusted quarter is reported. For the next analysis, when the thesis hinges on an unverified input, state the data-release trigger up front and do not treat a short-window alpha as confirmation of the rating.
+
 <!-- ENTRY_END -->
 
-[2026-11-06 | NVDA | Hold | pending]
+[2026-11-06 | NVDA | Hold | -12.6% | -10.9% | 5d | resolved:2026-11-16]
 
 DECISION:
 **Rating**: Hold
@@ -2078,6 +2081,9 @@ Our own track record matters here. The last five NVDA calls were all Overweight,
 **Price Target**: not provided
 
 **Time Horizon**: 2-4 weeks (through the Nov 17 earnings reaction), then reassess
+
+REFLECTION:
+The 5-day alpha of -10.9% (raw -12.6%) is a clear loss for a Hold rating, which is a weak call to be judged on a short window, but the decision itself was defensive and held no new money, so the damage was limited to the existing core position. The window is too short to confirm or refute the 2-4 week thesis, since the stated horizon runs through the Nov 17 earnings reaction. The drop supports the caution about the trend being broken and the unverified 11-05 price, while the business-quality part of the thesis (margins, cash flow, balance sheet) is untested by this move. The lesson for the next analysis is to treat a missing or conflicting price as a hard gate: state the stop as a multiple of ATR from a verified close, and avoid tying tactical exits to levels that a single unconfirmed session may already have breached.
 
 <!-- ENTRY_END -->
 
@@ -2240,7 +2246,7 @@ The 5-day alpha of -11.7% (raw -9.1%) confirms the Underweight direction, and th
 
 <!-- ENTRY_END -->
 
-[2026-11-08 | BTC-USD | Underweight | pending]
+[2026-11-08 | BTC-USD | Underweight | -14.7% | -15.0% | 5d | resolved:2026-11-14]
 
 DECISION:
 **Rating**: Underweight
@@ -2279,9 +2285,12 @@ The trade matches the rule from our recent calls: cut in stages, with each cut t
 
 **Time Horizon**: 2-6 weeks (5-day check on daily closes vs 74,324 and 79,300)
 
+REFLECTION:
+The 5-day raw return of -14.7% and alpha of -15.0% vs SPY strongly support the Underweight direction, with BTC falling far more than the market. The move ran well past the 74,324 trigger and the 73.5k target, so the call was right on direction and the window is too short to judge the full 2-6 week thesis. The price-structure and flow case (below the 10 EMA, MACD at its window low, ETF outflows) played out, but the drop also means the 77k resting limits likely never filled, leaving the position under-reduced for most of the move. For the next similar call, commit the bulk of the reduction at or near the daily-close trigger rather than depending on limit sells above price, and treat a fast break through the first trigger as a signal to complete the cut.
+
 <!-- ENTRY_END -->
 
-[2026-11-08 | ETH-USD | Underweight | pending]
+[2026-11-08 | ETH-USD | Underweight | -17.0% | -17.2% | 5d | resolved:2026-11-14]
 
 DECISION:
 **Rating**: Underweight
@@ -2307,6 +2316,9 @@ Missing data: there is no live spot quote, no on-chain data, no full ETF flow hi
 **Price Target**: 2156.0
 
 **Time Horizon**: 2-6 weeks (5-day checkpoint: close below 2,156 vs close above 2,279)
+
+REFLECTION:
+The -17.2% alpha over 5 days strongly confirms the Underweight direction, though the window is short relative to the 2-6 week horizon, so it cannot validate the full thesis or sizing on its own. The move supports the trend, flow, and fading-MACD case but undercuts the base-case range of $2,150-2,300 and the expectation of roughly matching SPY, since price broke through the 200 SMA (~$2,156) and kept falling rather than ranging. The lesson for similar calls is to state the expected downside in ATR terms and pre-set the action for a gap through the first support, such as the one-ATR level near $2,066, so that a trim does not depend on a close-based trigger that a fast move can skip past.
 
 <!-- ENTRY_END -->
 
@@ -2414,7 +2426,7 @@ I expect choppy, high-volatility trading between roughly 175 and 204 over the ne
 
 <!-- ENTRY_END -->
 
-[2026-11-09 | BTC-USD | Underweight | pending]
+[2026-11-09 | BTC-USD | Underweight | -11.4% | -12.0% | 5d | resolved:2026-11-15]
 
 DECISION:
 **Rating**: Underweight
@@ -2446,9 +2458,12 @@ DECISION:
 
 **Time Horizon**: 2-6 weeks (5-day checkpoint: daily close below 73,173 confirms; volume-backed close above 77,067 challenges)
 
+REFLECTION:
+The 5-day alpha of -12.0% (raw -11.4%) supports the Underweight direction, but the window is too short to judge the full 2–6 week thesis. The move went well through the 73,000–77,000 band and past the 73,173 200 SMA, which undercuts the claim that the rising 200 SMA and lower Bollinger band form a durable support zone. Next time, when a support level is named as the thesis anchor, state in advance what a close below it does to the trim size and to any counter-trend long, and be more cautious about calling support reliable when the flow and derivatives data are missing.
+
 <!-- ENTRY_END -->
 
-[2026-11-09 | ETH-USD | Underweight | pending]
+[2026-11-09 | ETH-USD | Underweight | -10.5% | -11.1% | 5d | resolved:2026-11-15]
 
 DECISION:
 **Rating**: Underweight
@@ -2507,6 +2522,9 @@ DECISION:
 **Price Target**: 2000.0
 
 **Time Horizon**: 2-6 weeks (5-session checkpoint at 2117.73 / 2255)
+
+REFLECTION:
+The 5-day raw return of -10.5% and alpha of -11.1% versus SPY confirm the underweight direction, though a 5-session window is too short to fully judge a 2–6 week thesis with a 2000 target. The window supports the structural part of the thesis: price closed below the 200 SMA, the 10 EMA and the 2117.73 level, and the failed bounce at 2422 was not reclaimed. It does not test the sizing logic or the claim that selling is fading on lower volume, and it leaves the 2000 target unresolved. Next time, when a call rests on a specific level like 2000, state the checkpoint for that level explicitly and avoid grading the full thesis on a window that cannot reach it.
 
 <!-- ENTRY_END -->
 
@@ -3499,6 +3517,237 @@ Selling everything at panic lows, about 300 points below where earlier calls beg
 **Price Target**: 1730.0
 
 **Time Horizon**: 2-6 weeks (5-session checkpoint: range 1,730-2,001, ETH lagging SPY)
+
+<!-- ENTRY_END -->
+
+[2026-11-17 | AAPL | Hold | pending]
+
+DECISION:
+**Rating**: Hold
+
+**Executive Summary**: Keep AAPL at your standard weight. Don't add between $348 and $356. If you're above standard, trim only the excess in the $356–361 zone. New or underweight money can buy up to one-third of a standard position at $339–346, but only if the pullback comes on lighter volume. Keep the other two-thirds in reserve until the first Ternus report is out, and don't buy on a pre-earnings breakout above $356.27. Risk is handled in two ways. First, size the position so that an 8–12% gap down after earnings is a loss you can absorb, because stops can't protect against gaps. Second, use two levels: a close below the 50-day SMA (about $339) on rising volume after earnings means cutting to 50–75% of standard weight, and a close below about $323–325 (the 2× ATR level and the 11-03 intraday low) means exiting new starter positions. The time horizon runs through the earnings report, with a 1–3 month view; judge the call at the report against these triggers.
+
+**Investment Thesis**: **Why Hold:** After weighing the arguments, the debate still comes out even. The Neutral analyst's framework makes the best use of both sides. This is an excellent business at a full price, heading into a binary event whose result none of us can see.
+
+**What rules out Underweight or Sell (the Aggressive analyst's valid points):**
+- The trend is intact. Price ($352.78) is above the 10-day EMA (350.29), the 50-day SMA (339.45) and the 200-day SMA (301.25). All three are rising, and price sits about 17% above the 200-day.
+- Fundamentals are strong:
+  - Revenue has grown about 16% year over year for three quarters in a row.
+  - Gross margin rose from 48.2% to 50.1%.
+  - EPS growth accelerated to about 29%.
+  - Trailing free cash flow is about $106B.
+- RSI at 57 and MACD at about +4.2 show cooling momentum, not a reversal. The Neutral analyst is right that trimming a standard-weight position into this would mean selling into a base.
+- My own record supports this. My Underweight calls on 11-03, 11-04 and 11-05 each lagged over five days because they fought this trend, and the Holds on 11-02 and 11-06 held up.
+
+**What rules out Overweight or Buy (the Conservative analyst's valid points):**
+- Valuation is stretched: 39.7x trailing earnings, 33.4x forward, a PEG of about 2.9, about 46x book and roughly a 2% free cash flow yield. That only works if forward EPS of $10.57 (about 19% growth) shows up.
+- The 50.1% gross margin was mostly earned before the memory-cost pressure. The first Ternus report is the real test of whether that margin holds.
+- The stock has failed to close above $356.27 since the 11-13 high of $360.83.
+- The rotation bid out of Nvidia and memory stocks could reverse, and Nvidia reports soon.
+- Odds of no Fed cuts in 2026 are about 98%, which weighs on a 40x multiple.
+- There have been no open-market insider purchases.
+
+**Where the Aggressive plan fails:**
+- The $331.65 stop is about 6% (21 points) below the current price, not 4.5% as stated.
+- That level is a closing price, not the low of that session.
+- No stop protects against an earnings gap.
+- Adding on a close above $356.27 before the print means paying the highest price for the least information.
+
+**Fixing the stop:** The Neutral analyst found that the trader's stop is inconsistent. $331.65 is less than one ATR from a $339 entry, so normal noise around the 50-day SMA would likely trigger it. I'm replacing it with the two-level structure: a 50-day SMA break on rising volume means reducing, and a hard exit sits at about $323–325. Gap risk is handled through position size. Optionally, a put spread into the print can cap the downside if its premium is worth paying for the position size.
+
+**What would change the call:**
+- **Upgrade to Overweight (up to about 110% of standard):** all three of these after earnings:
+  - gross margin guided at or above roughly 48–50% despite memory costs;
+  - revenue growth above about 10%;
+  - no cut to forward EPS guidance;
+
+  plus price holding $339–346, or a close above $360.83 on volume.
+- **Downgrade to Underweight (50–75% of standard):** a gross margin guide below 48%, a guidance cut, or a close below about $339 on rising volume after the print.
+
+**What to watch:** RSI falling below 50, a sharp rebound in Nvidia and memory stocks, and the total size of the Siri settlement before December 21.
+
+**Data gaps:**
+- The exact date of the Ternus report wasn't provided.
+- FRED macro data was unavailable.
+- The September-quarter figures are incomplete.
+- Insider job titles are inconsistent across records.
+- The Siri settlement total is unverified.
+- Sources disagree on the 11-03 close and low (331.65 vs 331.90, and 325.08 vs 325.33).
+- Your holdings weren't provided, so apply these percentages to your own standard weight.
+
+Check a live quote before placing orders.
+
+**Price Target**: not provided
+
+**Time Horizon**: Through the first Ternus earnings report; 1-3 month view
+
+<!-- ENTRY_END -->
+
+[2026-11-17 | NVDA | Underweight | pending]
+
+DECISION:
+**Rating**: Underweight
+
+**Executive Summary**: Underweight NVDA. Before the print, cut to about 40-50% of your standard NVDA weight. Set the size from a loss budget: assume a 15% overnight gap and keep only what you can afford to lose in that case. Hedge what remains with a put spread (about 145/135) or a collar rather than relying on a stop. Treat a closing break of about 136 (2x ATR) as a trend exit, not as protection against a gap. Cut to about 25% on a close below 148.80 after a weak guide. Before doing anything, check the live quote against the 156.14 close and confirm whether the Nov 17 after-close print has already happened. Horizon is 1-3 weeks through the earnings reaction.
+
+**Investment Thesis**: All three risk analysts agree on direction: reduce before the print and add nothing. The disagreement is over how far to cut and which tools to use. I'm moving the trader's 'Sell' back to the Research Manager's Underweight. No analyst argued for a full exit, and the fundamentals don't support one. Revenue went from $44.1B to $96.2B a quarter, operating cash flow was $74.4B over six months, debt-to-equity is 0.17x, and RSI at 22.7 is deeply oversold ahead of a binary event that could rip on a clean guide.
+
+Why reduce rather than hold:
+- The stock is down about 36-38% from its peak and sits below the 10 EMA (176.12), the 50 SMA and the 200 SMA (203.75).
+- MACD is -15.37 and still falling, with no confirmed RSI divergence.
+- After the 747.7M-share washout on 11-12, the bounce failed with closes of 162.85 and 156.14. The Conservative analyst correctly said that is two lower closes, not the four the Aggressive analyst claimed.
+- Net margin fell from about 71% to about 62% while revenue rose 18%.
+- The forward P/E of 9.9 depends on EPS roughly doubling to $15.84, which nobody can check.
+- New China items (the remote-access rule and the $7.5B diversion report) and a contested CEO exit add risks whose size is unknown.
+
+How I weighed the analysts:
+- **Neutral analyst (decisive point):** a stop and position size do different jobs. NVDA reports after the close, so a 136 stop fills at the next open and does nothing against a gap. On a stock with beta 2.25, a 15% gap is a plausible stress case.
+- **Conservative analyst:** right that the 50-60% residual with a 136 stop quietly accepts a loss of 13% or more. But the 25-30% figure has no method behind it.
+- **What I adopted:** the Neutral analyst's loss-budget method. Default to about 40-50% of standard weight, lower if a 15% gap on that amount breaks your budget, and hedge the residual. Check the options-implied move before paying for the hedge.
+
+Our own record supports this caution. Four straight Overweight calls from 11-02 to 11-05 lost 12-18% in alpha by buying 'support' in a falling trend. The 11-06 Hold still lost about 11%. The lessons from those calls were to treat a missing or conflicting price as a hard gate, to state stops in ATR terms from a verified close, and to size for the gap before the event. The quote conflict (about $156 vs about $215 implied by lagging averages) probably resolves to $156. The 148.80 low matches the 52-week low, but it still has to be verified before trading.
+
+What would change the call:
+- **Back to Hold (full weight):** the print quantifies the China impact, gross margin is stable or the one-time items are identified, and guidance supports the forward EPS path.
+- **Overweight, added in one-third tranches:** after that print, a close above 176.12 on volume, a higher low above 155.01, and a MACD bullish cross. If the stock gaps up on a strong guide, add on the first retest of the gap level or the 10 EMA, not at the opening print.
+- **Final tranche:** a named permanent CEO, or a reclaim of the 200 SMA (about 203.75).
+- **Sell (exit to near zero):** guidance cuts the margin outlook, the China write-downs or lost revenue are large, or material customer-financed revenue is disclosed.
+
+Still missing: the live quote, the confirmed print timing, consensus Q3 revenue and EPS, a clean gross margin series, the implied move, and customer-financing disclosure. The insider sales and the roughly 15-30 post StockTwits sample got little weight.
+
+**Price Target**: not provided
+
+**Time Horizon**: 1-3 weeks (through the Nov 17 earnings reaction), then reassess
+
+<!-- ENTRY_END -->
+
+[2026-11-17 | BTC-USD | Underweight | pending]
+
+DECISION:
+**Rating**: Underweight
+
+**Executive Summary**: Bring BTC-USD down to about 50% of your standard allocation. This trims an existing long. It is not a new short. Sell about 40% of the planned cut now in the 64,000–66,000 area. Put limit sells for the rest at 67,000–69,700, and sell whatever hasn't filled on Nov 26 at any price, so the cut is finished before the Nov 30 Trump Media note deadline. On a daily close below 62,000 with rising volume, cut to about 25%. If price gaps or cascades through 62,000 inside a session, finish that cut right away. Below 58,559, go to 0–10%. Open no new longs and no shorts. A daily close above the 200 SMA (~72,865) is the signal to start buying back. It is not a stop on what you keep. Horizon is 2–6 weeks, with a 5-day checkpoint.
+
+**Investment Thesis**: **Why Underweight**
+
+The Research Manager, the trader and all three risk analysts agree on direction. They disagree on how fast to reduce and whether to short.
+
+The bearish evidence:
+- **Trend:** BTC-USD (~64,942) is below the 10 EMA (~69,700), the 50 SMA (~79,365, down about 2,000 in a week) and the 200 SMA (~72,865). None of these averages is rising.
+- **Momentum:** MACD is −3,776, well below its signal line. The histogram narrowed by only about 12 points in one session.
+- **Size of the drop:** price has fallen about 22.7% in four weeks.
+- **Macro:** markets put 98% on no Fed cuts in 2026, and BTC is falling together with stocks and gold. That is rates-driven liquidity selling, and BTC is not acting as a hedge.
+- **Supply event:** the Nov 30 Trump Media note deadline (~$1B, ~15,000 BTC) could force selling into thin buy orders. The $2B liquidation weekend showed how fast that can cascade.
+- **Track record:** our recent Underweights on BTC-USD and ETH-USD were all right on direction, with 5-day alphas of −8.8% to −15%. Breakdowns through named support have kept following through.
+
+**Why not Sell**
+
+- **Oversold:** RSI is 24 after a 20.19 low on Nov 14. Price pierced the lower Bollinger band and closed back inside it, on heavy selling volume (44–48B).
+- **Support:** closes have held above the June low of 58,559.
+- **Macro type:** recession odds are only 2%, and a rates shock can reverse.
+- **Missing data:** FRED series, funding rates, open interest and ETF flows are all unavailable. The live price is also unclear: a headline put BTC near 62,100 on Nov 16, against the 64,942 snapshot close. That is too much uncertainty for a full exit.
+
+**Weighing the risk analysts**
+
+- **Aggressive: rejected.** The Conservative analyst showed the math doesn't hold.
+  - The 3.5–4.6:1 payoff assumes a 69,700 entry. The Aggressive analyst wants to sell at 64,942 instead.
+  - From 64,942, the 72,865 stop is about 7,900 away, while the June low is only about 6,400 below. That is worse than 1:1.
+  - A short sized to a 2× ATR loss (~5,100 points) can't also use the 72,865 stop.
+  - Shorting without funding or open-interest data, after a liquidation flush and with RSI near 20, invites a squeeze. A move back to the 10 EMA is only about 7%.
+  - The 28% chance of touching $55K is a year-end probability that jumped 18 points in one week. It is mostly a sentiment reading.
+- **Conservative: right to rule out shorts.** But the Neutral analyst found the gap in this plan: if price never bounces, you hold the whole unsold half from 64,942 down to 62,000 with nothing that makes you sell.
+- **Neutral: adopted.** The plan uses three parts: sell part now, ladder the rest into bounces, and sell everything left on a fixed date. A spot sale carries no squeeze risk, so selling some now is not chasing in the way a short would be.
+  - I raise the 'now' portion from about a fifth to about 40% of the planned cut. Our 11-08 lesson was that resting limits above price never filled during the fall, which left us under-reduced.
+  - The 11-08 ETH lesson adds a second rule: if price gaps through the first trigger, act right away instead of waiting for the daily close.
+
+**Execution**
+
+1. **Now:** sell about 40% of the reduction across 64,000–66,000, in pieces. Check live spot against the ~62,100 headline before each sale.
+2. **Bounce ladder:** place limits for the rest at 67,000–69,700. 69,700 is the 10 EMA and it is falling, so lower the top of the ladder as it drops.
+3. **Nov 26 backstop:** sell whatever hasn't filled, at any price.
+4. **Downside levels:**
+   - Daily close below 62,000 on rising volume: cut to 25%. If price cascades through it intraday, sell now rather than waiting for the close, using resting limits and small clips.
+   - Below 58,559: go to 0–10%.
+   - 57,748 (the 52-week low) is the last reference level.
+
+**Expected path and scoring**
+
+ATR is about 2,550 points (3.9% a day). Over 5 sessions I expect a range of roughly 62,000–69,700. Raw return should be flat to −1 ATR, and the SPY-relative return flat to negative.
+
+- A daily close below 62,000 confirms the call. A move larger than 2 ATR either way is a signal, not noise.
+- A volume-backed daily close above 69,700 that holds for more than one session counts against the call. In that case, stop the ladder and stay at whatever size you have reached.
+
+**What would change the call**
+
+- **Toward Hold**, rebuilt in 2–3 steps, only if all of these happen:
+  - a daily close above the 10 EMA on rising volume that holds for more than one session;
+  - the MACD histogram rises for several straight sessions;
+  - Nov 30 passes without a disorderly break of 62,000–63,000.
+- **Stronger confirmation:** a daily close above the 200 SMA (~72,865), or a December FOMC that turns out less hawkish than priced. Reassess at the falling 50 SMA (~79,365).
+- **Toward Sell:** a close below 58,559, or forced selling around Nov 30 that cascades.
+
+**Data gaps:** no FRED data, no verified Nov 16 price, no ETF flow, funding or open-interest data, no MSTR premium-to-NAV, and the Reddit pull failed. These gaps are why the cut stops at half rather than going further.
+
+**Price Target**: 61000.0
+
+**Time Horizon**: 2-6 weeks (5-day checkpoint: daily close below 62,000 confirms; volume-backed close above 69,700 holding >1 session challenges; reduction complete by Nov 26)
+
+<!-- ENTRY_END -->
+
+[2026-11-17 | ETH-USD | Underweight | pending]
+
+DECISION:
+**Rating**: Underweight
+
+**Executive Summary**: Reduce ETH-USD to no more than 40–50% of a standard allocation (aim for about 45%), and do not short. If my earlier triggers already cut you to 0–35%, stay there and buy nothing back. The 11-09 rule to go to 0–10% on any daily close below 2000 has fired. Make most of the cut now: sell about two-thirds of the planned trim near 1831. Spread the rest across 1900–1974. If that zone doesn't trade within 3 sessions, sell the rest on a daily close. A daily close below 1769 is a warning: cut to about 30%. A daily close below 1730.70 on expanding volume, or any trade through 1630, cuts you to 0–10%. Size what you keep so that a move to 1630 costs no more than 1–1.5% of total capital. The horizon is 2–6 weeks, with a 5-session checkpoint on whether 1730 or 1974 closes first.
+
+**Investment Thesis**: **Rating: Underweight.** The trader labelled this "Sell," but the instruction is to cut to 40–50% with no short. On this scale that is Underweight. The bearish case wins clearly. It does not win by enough to justify a full exit at a capitulation low.
+
+**Why the direction is down.** Every analyst, the Research Manager and the trader agree on these facts:
+- ETH-USD at 1831.37 is below the 10 EMA (1973.72, down from 2462 a month ago), the 200 SMA (2140.41) and the 50 SMA (2360.98).
+- The 50 SMA has fallen about 190 points in a month and sits only about 220 points above the 200 SMA. At the current pace it could cross below within about five weeks.
+- The MACD line is -144 and still falling.
+- The Aggressive analyst adds that the bounce is losing volume: 15.8B on 11-15, then 11.7B on 11-17, against 18.0B on 11-14.
+- The Research Manager's correction holds. The 11-14 close of 1769 was below the lower Bollinger band, so the "failed breakdown" pattern is only about two sessions old and unproven.
+- The backdrop is a seven-day ETF outflow streak, 98% odds of no Fed cuts in 2026, and selling in tech stocks.
+- My last four Underweight calls (11-06 through 11-09) were all confirmed, with 5-day alpha between -11% and -17%. The trend has not given a single bounce that lasted.
+
+**Why not Sell, and why I reject the Aggressive extension.** The Conservative and Neutral analysts found the real flaws:
+- The 1.5:1 payoff is a short-side reward on a plan that forbids shorting.
+- Its 1507 target comes from a 52-week figure that doesn't match the technical series, where the low is 1730.70.
+- Downside to 1507 (about 18%) and upside to the 200 SMA (about 17%) are roughly the same distance, so the move is not lopsided.
+- RSI hit 19.8 just three sessions ago, on the heaviest volume of the decline, after a liquidation cascade. A sharp squeeze to 1974–2140 is a live risk.
+- Binance reserves at a five-year low and continued Bitmine buying are small, but they point to tight supply.
+
+So I drop "go further on rejection." This is a cut to a long position, not a short.
+
+**What I adopt from each analyst:**
+- **From the Neutral analyst:** the 1769 close is less than one ATR (about 99) from price. As a full-exit line it would be whipsaw. It becomes a second-trim warning instead. Size and stop distance are set together: the remaining position is sized to 1–1.5% of capital at risk to 1630. If price stalls below 2140 after a squeeze, that is a better place to finish trimming than 1900.
+- **From the Conservative analyst:** don't add exposure on a rejection, and express risk as a share of capital, since I don't know the caller's holdings.
+
+**Lessons applied:**
+- *Own triggers are binding.* The 11-09 rule (0–10% below 2000) has fired. Holders who followed it should not buy back up to 45%. 45% is a ceiling for anyone still at standard size, not a target.
+- *Don't depend on limit sells above price.* In the BTC call on 11-08, the resting 77k sells never filled. So most of the cut happens now, with a 3-session time limit on the bounce ladder.
+- *Pre-set the action for a gap.* A trade through 1630 cuts to 0–10% without waiting for a daily close.
+- *Don't rebuild on one reclaimed level while the 50 SMA is falling.* On 11-05 that cost me -11.4% of alpha. Rebuilding therefore needs two closes, not one.
+
+**Expected path and checkpoint.** Over the next 5 sessions I expect chop between about 1730 and 1974, with an oversold bounce toward 1900–1974 that fails, and ETH-USD lagging SPY. My confidence is low because of the squeeze risk. The call is graded on which level closes first:
+- A close below 1730.70 on expanding volume confirms it.
+- A close above 1974 on rising volume that holds for 2 sessions counts against it.
+
+A raw drop that comes with positive alpha against SPY would not confirm the call. The 1507 level is not a target. It only becomes relevant after a confirmed break of 1730.
+
+**What would change the call:**
+- **Toward Hold (rebuild to about 65%):** two daily closes above 1974 on volume above recent sessions, with the MACD line itself turning up, not just the histogram.
+- **Back to standard size:** a sustained hold above 2140.
+- **Overweight:** this also needs ETF inflows and the 50 SMA flattening above the 200 SMA.
+- **Toward Sell (0–10%):** a close below 1730.70 on expanding volume, a trade through 1630, or the 50 SMA crossing below the 200 SMA while price stays under both.
+
+**Data gaps:** the 11-16 row is missing, there is no FRED data on rates, CPI or real yields, the "Fed hike" reports are unverified, there is no Reddit or on-chain flow data, and the StockTwits sample is only 15 labelled posts. These gaps argue for smaller positions, not for adding. Check any level within about $5 of a trigger against a second price source before acting on it.
+
+**Price Target**: 1730.0
+
+**Time Horizon**: 2-6 weeks (5-session checkpoint: first daily close below 1730.70 vs. two closes above 1974)
 
 <!-- ENTRY_END -->
 
