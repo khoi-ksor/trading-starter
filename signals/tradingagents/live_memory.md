@@ -4139,7 +4139,7 @@ Callers with index exposure should count VOO's roughly 25% weight in six AI name
 
 <!-- ENTRY_END -->
 
-[2026-11-20 | BTC-USD | Underweight | pending]
+[2026-11-20 | BTC-USD | Underweight | +0.7% | -3.2% | 5d | resolved:2026-11-26]
 
 DECISION:
 **Rating**: Underweight
@@ -4203,9 +4203,12 @@ These gaps are why this is a trim and not an exit.
 
 **Time Horizon**: 2-6 weeks; review on daily closes vs 60,300 / 62,000 / 66,611 / 71,913
 
+REFLECTION:
+The 5-day alpha of -3.2% (raw +0.7%) supports the directional call that BTC would underperform SPY, though a single 5-session window cannot validate the 2–6 week thesis or the sizing. The window undercuts the near-term rebound and fill assumptions more than the trend-break thesis, since price held above the 56,400 hard stop and the 60,300 confirmation level but did not reclaim 66,611, which is the on-track threshold. The lesson for the next similar analysis is to state the expected 5-day path explicitly (such as "no close above 66,611") so that a flat-to-positive raw return with negative alpha is recognized as a relative-performance miss rather than being read as a neutral outcome.
+
 <!-- ENTRY_END -->
 
-[2026-11-20 | ETH-USD | Underweight | pending]
+[2026-11-20 | ETH-USD | Underweight | +0.3% | -3.6% | 5d | resolved:2026-11-26]
 
 DECISION:
 **Rating**: Underweight
@@ -4262,6 +4265,9 @@ If anyone shorts, treat it as a separate decision with its own risk budget, usin
 **Price Target**: 1610.0
 
 **Time Horizon**: 2-6 weeks (review each daily close against 1700/1600 and 1880; formal check at 5 and 15 sessions)
+
+REFLECTION:
+Underweight on ETH-USD returned +0.3% raw but -3.6% alpha versus SPY over 5 sessions, so the call underperformed the market even though price did not fall, and it is too short a window to judge the 2–6 week thesis or the 1610 target. The window supports the bear case only partially: price stayed around 1729 instead of breaking 1700 on volume, so the expected breakdown has not yet occurred, and the failed-bounce sell zone near 1800–1880 was not tested in a way that confirms or refutes it. Next time, when a thesis depends on a near-term breakdown, state the explicit daily-close trigger and the sessions needed to confirm it in the decision, and separate the sizing call from the directional call in the grading so that a flat-price window is not scored as a loss on direction.
 
 <!-- ENTRY_END -->
 
@@ -5447,6 +5453,131 @@ Data gaps: the 11-26 price row is missing, there is no FRED macro data, ETH ETF 
 **Price Target**: 1580.0
 
 **Time Horizon**: 2-6 weeks (5-session checkpoint: close below 1580 vs. close above 1835 on rising volume)
+
+<!-- ENTRY_END -->
+
+[2026-11-28 | BTC-USD | Underweight | pending]
+
+DECISION:
+**Rating**: Underweight
+
+**Executive Summary**: Underweight BTC-USD: hold no more than about 50% of a standard allocation. This is a trim of an existing long, not a new short. If you hold more than that, sell about 40% of the excess now near 59,900. Place limit sells for the rest at 61,500–64,500, and sell whatever hasn't filled at market after 5 sessions. If earlier triggers already took you to 25% or less (for example, the 11-20 rule to cut on a close below 60,300), stay there and don't buy back up to 50%. Cut to 0–25% on a daily close below 55,149.57. A daily close above 61,546 (the 10 EMA) on rising volume means stop selling, not stop out. Horizon is 2–6 weeks, with a 5-day check against stated levels.
+
+**Investment Thesis**: **Call: Underweight.** The trader labelled this 'Sell', but the trade cuts to about 50% of standard and keeps a core position. On our scale that is Underweight, which matches the Research Manager's plan. All three risk analysts agree the trend is down. They disagree only on how fast to sell and how hard.
+
+**Why reduce: the trend is still down.**
+- **Below every average:** BTC-USD closed at 59,892, about 31% below the September peak of 86,603. That is below the 10 EMA (61,546), the Bollinger middle (65,147), the 200 SMA (71,811) and the 50 SMA (74,243).
+- **Death cross close:** the gap between the 50 SMA and 200 SMA has shrunk from about 8,800 to about 2,430, so a cross is likely within days.
+- **Structure:** price keeps making lower lows and lower highs. The 55,149 low on 11/21 came after the 'capitulation' day. The 64,478 bounce on 11/23 failed below the Bollinger middle. Price has since been stuck at 59,700–60,500 without reclaiming the 10 EMA.
+- **Flows:** spot ETF outflows exceed $5.3B in total.
+- **Crowd odds:** Polymarket puts about 55% on BTC touching $55K by year-end.
+- **Track record:** our Underweights since early November have mostly been right on direction, with price falling from about 75K to about 60K.
+
+**Why not Sell, and why I reject the Aggressive analyst's 25%-now plan:**
+- **Oversold with higher lows:** RSI is about 27 and has made higher lows from 17.5. The MACD line has risen from -4,931 to -4,423, and the histogram turned positive (+29). That is small, but it is the first improvement.
+- **Selling is slowing:** volume is about half the 11/20 flush.
+- **Lesson from 11-19:** that call underweighted oversold momentum with a higher RSI low and got a +2.7% bounce. I weight the same setup more heavily this time.
+- **Stop too tight:** the Conservative analyst showed the Aggressive analyst's 2.8% stop at 61,546 is inside one ATR (2,759, about 4.6% of price). Normal daily noise would hit it.
+- **Wrong frame:** the Neutral analyst pointed out that on a trim, 61,546 is the level to stop selling or add back. It is not a stop-loss on a short.
+- **Gives up better prices:** selling everything at 59,892 forfeits 2.7–8.7% of price that a rally into 61,500–65,100 would likely give. The 11/23 high of 64,478 shows that zone gets reached.
+- **Odds are not near-term:** the Polymarket 55% is a year-end touch probability from a thin market that moved 36 points in a week. The same market gives about 45% to never touching $55K.
+- **Options idea rejected:** buying puts or other bearish options now would mean paying high implied volatility and losing value to time decay. That would also need mandate approval we can't confirm.
+- **Upside catalysts:** the Strategic Bitcoin Reserve bill and crowded downside hedges (about $7B toward $40K) make a 5–10% relief rally a real risk.
+
+**Where I side with the Conservative analyst:** don't trade the death-cross headline, because the cross hasn't printed yet. Size whatever you keep so a 2-ATR move (about 5,500) is a loss you can accept.
+
+**What I take from the Neutral analyst:**
+- If a rally stalls below 61,546 on weak volume, sell earlier rather than wait for 65,100.
+- Act on daily closes, not intraday wicks.
+- Treat any options as small insurance, not a directional bet.
+
+**Lesson from the 11-08 and 11-20 reviews:** resting sells above price didn't fill in a grinding decline, which left positions too big. So part of the trim happens now, and the rally orders have a 5-session deadline with a market-order fallback.
+
+**Expected 5-day path, stated in advance:**
+- **Base case:** a range of about 55,150–64,500 (roughly ±1.7 ATR), with a bounce that fails below 65,147.
+- **Raw return:** flat to negative. **Return vs SPY (alpha):** flat to negative. Grade the call on alpha, because earlier BTC moves were mostly market beta.
+- **On track:** no daily close above 65,147.
+- **Confirmed:** a daily close below 55,149.57. Cut to 0–25%. The next references are the lower Bollinger band (about 54,150), then 50,000.
+- **Timing miss:** two daily closes above 61,546 on rising volume with the histogram still rising. Stop trimming.
+- **Wrong:** a daily close above 65,147 with a higher high above 64,478, RSI near 50, and several sessions of ETF inflows. Move to Hold or standard weight.
+- **Reassess for Overweight:** a reclaim of the 200 SMA (71,811).
+- **Toward Sell:** a heavy-volume break below 55,149 that keeps going, or forced selling by treasury companies.
+
+**Data gaps:**
+- FRED macro data (rates, CPI, VIX) didn't load.
+- ETF flows are only cumulative and monthly figures.
+- There is no data on spot short interest, funding rates or open interest.
+- We don't know your holdings.
+
+These gaps are why this is a staged trim and not an exit. The 55,150 price target is a conditional downside reference, not a short target.
+
+**Price Target**: 55150.0
+
+**Time Horizon**: 2-6 weeks; 5-day check on daily closes vs 55,149.57 (down) and 61,546 / 65,147 (up)
+
+<!-- ENTRY_END -->
+
+[2026-11-28 | ETH-USD | Underweight | pending]
+
+DECISION:
+**Rating**: Underweight
+
+**Executive Summary**: Stay Underweight ETH-USD with a ceiling of about 25% of a standard allocation. This is a ceiling, not a target: if you already hold 0–25%, keep it and buy nothing back. If you hold more, sell the excess into a bounce at 1700–1730 using limit orders, and sell whatever hasn't filled after 3 sessions at the daily close. Do not short and do not chase lower prices. Cut to 0–10% on any daily close below 1600, or a close below 1619.43 on rising volume. Rebuild in steps: to about 40% after 3 closes above 1730 with RSI above 40, and toward Hold after a close above 1863. Horizon is 2–6 weeks, with a 5-session check.
+
+**Investment Thesis**: **Direction: bearish, and every voice agrees.** The Research Manager, the trader and all three risk analysts read the trend the same way.
+- ETH-USD at 1662.58 is below the 10 EMA (1722.71), the VWMA (1729.81), the 200 SMA (2106) and the 50 SMA (2151). The 50 SMA is falling and sits only about 45 points above the 200, so a death cross is close.
+- Each bounce has peaked lower than the last (2121/2273 → 2056 → about 1840), and RSI peaks have fallen too (54 → 40 → 34 → 31).
+- The MACD line is still about 150 points below zero.
+- Flows lean negative: USDT supply on Ethereum fell $8.1B, the steepest drop since 2022; whales sold more than $120M; and $5.3B left ETFs, though it's unconfirmed how much was ETH.
+- The late-November bounce looks like short covering (about $80M liquidated), not new spot buying.
+- The macro backdrop doesn't help: markets price almost no chance of Fed cuts.
+
+The bull case is a near-term bounce, not a change of trend:
+- RSI is 28, up from lows near 19.5.
+- The MACD histogram is slightly positive (+4.64).
+- There was a capitulation-style volume spike (about 21.5B) followed by the 1538.60 wick on 11-21.
+- ATR has eased from 111.71 to 97.68.
+
+Even in the best case, that bounce only reaches the 10 EMA and VWMA.
+
+**Why the ceiling is 25%, not the plan's 50–60%.** Our lessons say to treat our own triggers as binding.
+- The 11-19 memo said to cut to 0–10% on a close below 1730.70 or any trade below about 1670. Both have happened.
+- The 11-20 memo set a 25% ceiling as a compromise and cut to 0–10% on a close below 1700 on more than about 20B of volume, or any close below about 1600.
+- If 11-21 (close 1682.20, heavy volume) cleared that 20B bar, holders following our rules should already be at 0–10%. The supplied data doesn't give the exact volume for that day, so check it. If it's confirmed, the 0–10% level applies.
+- A 50–60% ceiling would let holders buy back exposure our earlier rules already removed. That is exactly the drift our lessons warn against.
+
+**Why not Sell, and why I reject the Aggressive analyst's extensions.** The Conservative and Neutral analysts showed the Aggressive analyst's math doesn't hold up.
+- With a stop at 1863 against a 1720 entry, the first target (1619) pays about 0.7 to 1. Even 1506 pays only about 1.5 to 1. The trade needs a win rate of about 58% to break even.
+- The 54% Polymarket odds of a dip to 1500 come from a thin market that moved 30 points in a week. That is a modest lean, not conviction.
+- Adding exposure after a break of 1619, in thin holiday trading, inside the 1538–1506 support zone (the lower Bollinger band sits on the 52-week low), and with a crowded short side, risks a violent squeeze.
+
+Our cross-ticker lessons point the same way. The BTC call on 11-19 lost to a rally from RSI near 21, and the ETH call on 11-19 showed slight positive alpha. Both say to weigh oversold bounce risk more heavily and not to sell hard at the lows. So the remaining excess is sold into strength, with no new selling at oversold prints near 1620.
+
+**Fixing the trader's order.** A 1730 "stop" just above a 1722.71 sell price protects nothing on a trimmed long, and it sits inside normal daily noise (ATR is about 98). I've replaced it with the Neutral analyst's tiers:
+- A close above 1725–1730 on volume stops further trimming.
+- 3 closes above 1730 with RSI above 40 allows a rebuild to about 40%.
+- A close above 1863 (the last lower high) means the trim was wrong. Move toward Hold.
+
+Two execution rules come from earlier lessons:
+- Resting sell orders above price often don't fill in a grinding decline, so unfilled trims are sold at the close after 3 sessions.
+- Any close below 1600 cuts to 0–10% regardless of volume.
+
+**Expected path, so the call can be checked.**
+- **Next 5 sessions:** choppy trading between about 1580 and 1760, a relief bounce that fails near 1720–1760, no 3 consecutive closes above 1730, and ETH lagging SPY.
+- **Supports the call:** a close below 1619.43 on rising volume, or below 1600.
+- **Counts against it:** 3 closes above 1730 with RSI above 40, or a close above 1863.
+
+A flat-price window says nothing about direction. Score sizing separately from direction.
+
+**What would change the call.**
+- **Toward Hold or Overweight:** a sustained close above 1863, then progress toward the 2100–2150 SMA zone with the MACD line above zero, and ETH-specific ETF inflows or USDT supply on Ethereum growing again.
+- **Toward Sell:** a close below the 52-week low of 1506.51, the 50/200 death cross while price stays under both, BTC losing about $60K, or a failed Glamsterdam test.
+
+**Missing data:** live spot price, the exact volume on 11-21, ETH-specific ETF flows, funding rates and open interest, on-chain exchange inflows, FRED macro data and Reddit sentiment. These gaps are part of why the remaining position is held at a ceiling rather than fully exited.
+
+**Price Target**: 1540.0
+
+**Time Horizon**: 2-6 weeks (5-session checkpoint: close below 1619.43/1600 vs. 3 closes above 1730 with RSI>40)
 
 <!-- ENTRY_END -->
 
